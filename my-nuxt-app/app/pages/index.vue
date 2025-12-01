@@ -1,5 +1,5 @@
 <template>
-    <div class="relative min-h-[calc(100vh-216px)]">
+    <div class="relative min-h-[calc(100vh-96px)]">
         <!-- Background Image -->
         <div class="absolute inset-0">
             <img 

@@ -42,8 +42,8 @@
                                         1 osoba / 1,5 hodiny
                                     </div>
                                 </td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800">1 400</td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800">1 800</td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800"><span>1 400 Kč/1 osoba</span></td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800"><span>1 800 Kč/1 osoba</span></td>
                             </tr>
                             <tr class="border-b border-gray-100 hover:bg-sky-50 transition-colors">
                                 <td class="py-4 px-2 sm:px-4 text-gray-600">
@@ -52,8 +52,8 @@
                                         2 osoby / 1,5 hodiny
                                     </div>
                                 </td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800">1 200</td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800">1 600</td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800"><div class="flex flex-col align-start"><span>2 400 Kč/2 osoby</span><span class="text-sm text-gray-500">1 200 Kč/osoba</span></div></td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800"><div class="flex flex-col align-start"><span>3 200 Kč/2 osoby</span><span class="text-sm text-gray-500">1 600 Kč/osoba</span></div></td>
                             </tr>
                             <tr class="border-b border-gray-100 hover:bg-sky-50 transition-colors">
                                 <td class="py-4 px-2 sm:px-4 text-gray-600">
@@ -62,8 +62,8 @@
                                         3 osoby / 1,5 hodiny
                                     </div>
                                 </td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800">1 000</td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800">1 400</td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800"><div class="flex flex-col align-start"><span>3 000 Kč/3 osoby</span><span class="text-sm text-gray-500">1 000 Kč/osoba</span></div></td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800"><div class="flex flex-col align-start"><span>4 200 Kč/3 osoby</span><span class="text-sm text-gray-500">1 400 Kč/osoba</span></div></td>
                             </tr>
                             <tr class="border-b border-gray-100 hover:bg-sky-50 transition-colors">
                                 <td class="py-4 px-2 sm:px-4 text-gray-600">
@@ -72,8 +72,8 @@
                                         4 osoby / 1,5 hodiny
                                     </div>
                                 </td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800">800</td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800">1 200</td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800"><div class="flex flex-col align-start"><span>3 200 Kč/4 osoby</span><span class="text-sm text-gray-500">800 Kč/osoba</span></div></td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800"><div class="flex flex-col align-start"><span>4 800 Kč/4 osoby</span><span class="text-sm text-gray-500">1 200 Kč/osoba</span></div></td>
                             </tr>
                             <tr class="hover:bg-sky-50 transition-colors">
                                 <td class="py-4 px-2 sm:px-4 text-gray-600">

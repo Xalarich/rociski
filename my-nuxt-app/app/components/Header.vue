@@ -26,7 +26,7 @@
             ></span>
           </NuxtLink>
 
-          <Popover class="relative" v-slot="{ open }">
+          <Popover class="relative" v-slot="{ open, close }">
             <PopoverButton 
               class="flex items-center gap-x-1 text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-50 hover:text-sky-700 outline-none"
               :class="{ 'text-sky-700 bg-sky-50': route.path.startsWith('/kurzy') || open }"
@@ -51,6 +51,7 @@
                   :to="item.href" 
                   class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-blue-950 transition-colors duration-150 hover:bg-sky-50 hover:text-sky-700 mb-1"
                   :class="{ 'bg-sky-50 text-sky-700': route.path === item.href }"
+                  @click="close"
                 >
                   {{ item.name }}
                 </NuxtLink>
@@ -58,7 +59,7 @@
             </transition>
           </Popover>
 
-          <Popover class="relative" v-slot="{ open }">
+          <Popover class="relative" v-slot="{ open, close }">
             <PopoverButton 
               class="flex items-center gap-x-1 text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-50 hover:text-sky-700 outline-none"
               :class="{ 'text-sky-700 bg-sky-50': route.path.startsWith('/servis-lyzi') || open }"
@@ -83,6 +84,7 @@
                   :to="item.href" 
                   class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-blue-950 transition-colors duration-150 hover:bg-sky-50 hover:text-sky-700 mb-1"
                   :class="{ 'bg-sky-50 text-sky-700': route.path === item.href }"
+                  @click="close"
                 >
                   {{ item.name }}
                 </NuxtLink>
