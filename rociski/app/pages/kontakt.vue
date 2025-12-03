@@ -3,7 +3,7 @@
         <div class="max-w-4xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h1 class="text-4xl md:text-5xl font-light text-gray-800 mb-4">Kontaktujte nás ❄</h1>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-light text-gray-800 mb-4">Kontaktujte nás ❄</h1>
                 <div class="w-24 h-1 bg-sky-500 mx-auto"></div>
             </div>
 
@@ -17,7 +17,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                             </svg>
                         </div>
-                        <h2 class="text-xl font-semibold text-gray-800">Adéla Ročárková</h2>
+                        <h2 class="text-lg md:text-xl font-semibold text-gray-800">Adéla Ročárková</h2>
                     </div>
                     
                     <div class="space-y-4 text-gray-600">
@@ -63,7 +63,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                             </svg>
                         </div>
-                        <h2 class="text-xl font-semibold text-gray-800">Fakturační údaje</h2>
+                        <h2 class="text-lg md:text-xl font-semibold text-gray-800">Fakturační údaje</h2>
                     </div>
                     
                     <div class="space-y-4 text-gray-600">
@@ -93,9 +93,18 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                     </svg>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-2">Nové Město na Moravě</h3>
-                <p class="text-gray-600">V srdci Vysočiny – ideální místo pro běžecké lyžování</p>
+                <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-2">Nové Město na Moravě</h3>
+                <p class="text-gray-600 text-sm md:text-base">V srdci Vysočiny – ideální místo pro běžecké lyžování</p>
             </div>
         </div>
     </div>
 </template>
+
+<script setup>
+useHead({
+  title: 'Kontakt | Ročiski',
+  meta: [
+    { name: 'description', content: 'Kontaktujte nás – Adéla Ročárková, Nové Město na Moravě. Telefon: +420 777 845 298, email: rociski@gmail.com. Kurzy běžeckého lyžování na Vysočině.' }
+  ]
+})
+</script>

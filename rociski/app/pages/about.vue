@@ -1,21 +1,21 @@
 <template>
-    <div class="relative min-h-[calc(100vh-96px)]">
+    <div class="relative min-h-[calc(100vh-80px)]">
         <!-- Background Image -->
-        <div class="absolute inset-0">
+        <div class="absolute inset-0 min-h-[800px]">
             <img 
                 src="/img/main.jpg" 
                 alt="Cross-country skiing" 
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover object-[65%_10%] sm:object-[2%_10%] lg:object-[0%_10%]"
             />
         </div>
         
         <!-- Content Overlay -->
         <div class="relative z-10 flex items-start py-8 px-4 md:px-8 lg:px-16">
             <!-- Text Box -->
-            <div class="bg-white/80 backdrop-blur-xs p-8 md:p-12 max-w-xl shadow-lg rounded-2xl">
-                <h1 class="text-4xl md:text-5xl italic text-gray-900 mb-6">O NÁS</h1>
+            <div class="bg-white/80 backdrop-blur-xs px-6 py-4 max-w-lg shadow-lg rounded-2xl">
+                <h1 class="text-3xl italic text-gray-900 mb-1">O NÁS</h1>
                 
-                <div class="space-y-4 text-gray-800 italic text-sm md:text-base leading-relaxed">
+                <div class="space-y-4 text-gray-800 italic text-sm leading-relaxed">
                     <p>
                         Už je to pár let, co jsme se závoděním skončili. Byla to poměrně dlouhá cesta, během níž jsme se snažili zdokonalovat nejen z hlediska fyzické kondice, ale také techniky běhu na lyžích. Kdybychom měli na začátku tolik znalostí, kolik jsme jich měli na konci kariéry, všechno by bylo snazší a výsledky možná ještě lepší. Rádi bychom předali nabité zkušenosti dalším lyžařům bez ohledu na jejich výkonnost.
                     </p>
@@ -41,3 +41,12 @@
         
     </div>
 </template>
+
+<script setup>
+useHead({
+  title: 'O nás | Ročiski',
+  meta: [
+    { name: 'description', content: 'Adéla a Jiří Ročárkovi – dvojnásobný Mistr Evropy v dálkových bězích a vítězka Worldloppetu. Předáváme zkušenosti dalším lyžařům na Vysočině.' }
+  ]
+})
+</script>

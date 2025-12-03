@@ -1,19 +1,19 @@
 <template>
-    <div class="relative min-h-[calc(100vh-96px)]">
+    <div class="relative min-h-[calc(100vh-80px)] flex items-start justify-end">
         <!-- Background Image -->
-        <div class="absolute inset-0">
+        <div class="absolute inset-0 min-h-[800px]">
             <img 
                 src="/img/kurzy.jpg" 
                 alt="Cross-country skiing" 
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover object-[30%_0%] md:object-[75%_0%]"
             />
-        </div>
+        </div> 
         
         <!-- Content Overlay -->
         <div class="relative z-10 py-8 px-4 md:px-8 lg:px-16">
             <!-- Text Box -->
-            <div class="bg-white/80 backdrop-blur-xs p-8 md:p-12 max-w-lg shadow-lg rounded-2xl">
-                <h1 class="text-4xl md:text-5xl italic text-gray-900 mb-6">Kurzy běžeckého lyžování</h1>
+            <div class="bg-white/80 backdrop-blur-xs p-6 sm:p-8 max-w-lg shadow-lg rounded-2xl">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl italic text-gray-900 mb-4 md:mb-6">Kurzy běžeckého lyžování</h1>
                 
                 <div class="space-y-4 text-gray-800 italic text-sm md:text-base leading-relaxed">
                     <p>Dva bývalí přední čeští laufaři by chtěli předat své zkušenosti a pomoct Ti se zlepšením techniky běhu na lyžích.</p>
@@ -26,3 +26,12 @@
         
     </div>
 </template>
+
+<script setup>
+useHead({
+  title: 'Kurzy běžeckého lyžování | Ročiski',
+  meta: [
+    { name: 'description', content: 'Kurzy běžeckého lyžování pro začátečníky i pokročilé. Klasický styl, volný styl, soupaž. Trénujeme v okolí Nového Města na Moravě a Vysočina areny.' }
+  ]
+})
+</script>

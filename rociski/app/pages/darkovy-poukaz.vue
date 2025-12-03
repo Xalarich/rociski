@@ -3,10 +3,10 @@
         <div class="max-w-4xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h1 class="text-4xl md:text-5xl font-light text-gray-800 mb-4">Dárkové poukazy</h1>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-light text-gray-800 mb-4">Dárkové poukazy</h1>
                 <div class="w-24 h-1 bg-sky-500 mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    Nevíte co dát blízkým k Vánocům? Napište nám a zašleme vám poukaz.
+                <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+                    Nevíte co dát blízkým za dárek? Napište nám a zašleme vám poukaz.
                 </p>
             </div>
 
@@ -21,11 +21,11 @@
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-xl font-semibold text-gray-800">Individuální lekce</h2>
+                            <h2 class="text-lg md:text-xl font-semibold text-gray-800">Individuální lekce</h2>
                             <span class="text-sky-600 font-medium">od 1 400 Kč</span>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-600 mb-4 text-sm md:text-base">
                         Osobní výuka běžeckého lyžování s plnou pozorností instruktora. Ideální pro začátečníky i pokročilé, kteří chtějí zlepšit techniku.
                     </p>
                     <ul class="space-y-2 text-gray-600 text-sm">
@@ -59,11 +59,11 @@
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-xl font-semibold text-gray-800">Lekce pro dva</h2>
+                            <h2 class="text-lg md:text-xl font-semibold text-gray-800">Lekce pro dva</h2>
                             <span class="text-sky-600 font-medium">od 2 400 Kč</span>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-600 mb-4 text-sm md:text-base">
                         Sdílený zážitek pro páry nebo přátele. Společné lyžování je zábavnější a můžete se navzájem motivovat.
                     </p>
                     <ul class="space-y-2 text-gray-600 text-sm">
@@ -97,11 +97,11 @@
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-xl font-semibold text-gray-800">Skupinová lekce</h2>
+                            <h2 class="text-lg md:text-xl font-semibold text-gray-800">Skupinová lekce</h2>
                             <span class="text-sky-600 font-medium">od 3 000 Kč</span>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-600 mb-4 text-sm md:text-base">
                         Ideální pro rodiny nebo partu přátel. Společné lyžování v krásné přírodě Vysočiny.
                     </p>
                     <ul class="space-y-2 text-gray-600 text-sm">
@@ -135,11 +135,11 @@
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-xl font-semibold">Poukaz na míru</h2>
+                            <h2 class="text-lg md:text-xl font-semibold">Poukaz na míru</h2>
                             <span class="text-sky-100 font-medium">dle vašeho přání</span>
                         </div>
                     </div>
-                    <p class="text-sky-100 mb-4">
+                    <p class="text-sky-100 mb-4 text-sm md:text-base">
                         Máte speciální přání? Vytvořte si poukaz přesně podle vašich představ – kombinace lekcí, průvodcování nebo servis lyží.
                     </p>
                     <ul class="space-y-2 text-sky-100 text-sm">
@@ -173,7 +173,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h2 class="text-xl font-semibold text-gray-800">Jak to funguje?</h2>
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800">Jak to funguje?</h2>
                 </div>
                 
                 <div class="grid md:grid-cols-3 gap-6">
@@ -181,22 +181,22 @@
                         <div class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
                             <span class="text-sky-700 font-bold text-lg">1</span>
                         </div>
-                        <h3 class="font-semibold text-gray-800 mb-2">Vyberte poukaz</h3>
-                        <p class="text-gray-600 text-sm">Zvolte typ lekce nebo nás kontaktujte pro poukaz na míru.</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 text-sm md:text-base">Vyberte poukaz</h3>
+                        <p class="text-gray-600 text-xs md:text-sm">Zvolte typ lekce nebo nás kontaktujte pro poukaz na míru.</p>
                     </div>
                     <div class="text-center">
                         <div class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
                             <span class="text-sky-700 font-bold text-lg">2</span>
                         </div>
-                        <h3 class="font-semibold text-gray-800 mb-2">Kontaktujte nás</h3>
-                        <p class="text-gray-600 text-sm">Domluvíme detaily a připravíme krásný dárkový poukaz.</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 text-sm md:text-base">Kontaktujte nás</h3>
+                        <p class="text-gray-600 text-xs md:text-sm">Domluvíme detaily a připravíme krásný dárkový poukaz.</p>
                     </div>
                     <div class="text-center">
                         <div class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
                             <span class="text-sky-700 font-bold text-lg">3</span>
                         </div>
-                        <h3 class="font-semibold text-gray-800 mb-2">Darujte zážitek</h3>
-                        <p class="text-gray-600 text-sm">Poukaz zašleme elektronicky nebo osobně předáme.</p>
+                        <h3 class="font-semibold text-gray-800 mb-2 text-sm md:text-base">Darujte zážitek</h3>
+                        <p class="text-gray-600 text-xs md:text-sm">Poukaz zašleme elektronicky nebo osobně předáme.</p>
                     </div>
                 </div>
 
@@ -211,13 +211,13 @@
             <div class="mt-12 text-center">
                 <NuxtLink 
                     to="/kontakt" 
-                    class="inline-flex items-center px-8 py-4 bg-sky-500 text-white font-semibold rounded-full shadow-lg hover:bg-sky-600 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                    class="inline-flex items-center px-6 py-3 md:px-8 md:py-4 bg-sky-500 text-white font-semibold rounded-full shadow-lg hover:bg-sky-600 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base"
                 >
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     Objednat dárkový poukaz
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                 </NuxtLink>
@@ -225,3 +225,12 @@
         </div>
     </div>
 </template>
+
+<script setup>
+useHead({
+  title: 'Dárkové poukazy | Ročiski',
+  meta: [
+    { name: 'description', content: 'Darujte zážitek – dárkové poukazy na výuku běžeckého lyžování. Individuální lekce, lekce pro dva i skupinové kurzy. Platnost 12 měsíců.' }
+  ]
+})
+</script>

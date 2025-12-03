@@ -10,6 +10,9 @@ export default {
         '112': '28rem',
         '128': '32rem',
       },
+      screens: {
+        'xl': '1280px',
+      },
     },
   },
 }
