@@ -1,5 +1,5 @@
 <template>
-    <div class="relative min-h-[calc(100vh-80px)] flex items-end justify-start">
+    <div class="relative min-h-[800px] md:min-h-[calc(100vh-80px)] flex items-end justify-start">
         <!-- Background Image -->
         <div class="absolute inset-0 min-h-[800px]">
             <img 

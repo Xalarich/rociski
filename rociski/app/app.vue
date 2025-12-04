@@ -6,8 +6,8 @@ const layout = 'default'
 useHead({
   noscript: [
     {
-      children: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PX6XSTG" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-      body: true,
+      innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PX6XSTG" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+      tagPosition: 'bodyOpen',
     },
   ],
 })
