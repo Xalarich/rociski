@@ -26,10 +26,12 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Kolečkové lyže | Ročiski',
-  meta: [
-    { name: 'description', content: 'Kurzy na kolečkových lyžích v létě. Trénink techniky jízdy na asfaltových cestách v okolí Nového Města na Moravě.' }
-  ]
+  description: 'Kurzy na kolečkových lyžích v létě. Trénink techniky jízdy na asfaltových cestách v okolí Nového Města na Moravě.',
+  ogTitle: 'Kolečkové lyže | Ročiski',
+  ogDescription: 'Kurzy na kolečkových lyžích v létě. Trénink techniky jízdy na asfaltových cestách.',
+  ogUrl: 'https://rociski.cz/kurzy/koleckove-lyze',
+  ogImage: 'https://rociski.cz/img/koleckace.jpg',
 })
 </script>

@@ -101,10 +101,11 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Kontakt | Ročiski',
-  meta: [
-    { name: 'description', content: 'Kontaktujte nás – Adéla Ročárková, Nové Město na Moravě. Telefon: +420 777 845 298, email: rociski@gmail.com. Kurzy běžeckého lyžování na Vysočině.' }
-  ]
+  description: 'Kontaktujte nás – Adéla Ročárková, Nové Město na Moravě. Telefon: +420 777 845 298, email: rociski@gmail.com. Kurzy běžeckého lyžování na Vysočině.',
+  ogTitle: 'Kontakt | Ročiski',
+  ogDescription: 'Kontaktujte nás – Adéla Ročárková. Tel: +420 777 845 298, email: rociski@gmail.com.',
+  ogUrl: 'https://rociski.cz/kontakt',
 })
 </script>

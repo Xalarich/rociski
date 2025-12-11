@@ -158,10 +158,11 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Ceník | Ročiski',
-  meta: [
-    { name: 'description', content: 'Ceník výuky běžeckého lyžování – individuální i skupinové lekce. Ceny od 1 400 Kč za 1,5 hodiny. Přednášky, servis lyží a průvodcování dle domluvy.' }
-  ]
+  description: 'Ceník výuky běžeckého lyžování – individuální i skupinové lekce. Ceny od 1 400 Kč za 1,5 hodiny. Přednášky, servis lyží a průvodcování dle domluvy.',
+  ogTitle: 'Ceník | Ročiski',
+  ogDescription: 'Ceník výuky běžeckého lyžování – individuální i skupinové lekce od 1 400 Kč.',
+  ogUrl: 'https://rociski.cz/cenik',
 })
 </script>

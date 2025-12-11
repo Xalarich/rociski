@@ -25,10 +25,12 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Servis lyží | Ročiski',
-  meta: [
-    { name: 'description', content: 'Profesionální servis běžeckých lyží na závody. Přítomni na Toblach-Cortina, Marcialonga a Jizerské 50. Sezóna 2025/26.' }
-  ]
+  description: 'Profesionální servis běžeckých lyží na závody. Přítomni na Toblach-Cortina, Marcialonga a Jizerské 50. Sezóna 2025/26.',
+  ogTitle: 'Servis lyží | Ročiski',
+  ogDescription: 'Profesionální servis běžeckých lyží na závody. Sezóna 2025/26.',
+  ogUrl: 'https://rociski.cz/servis-lyzi/servis',
+  ogImage: 'https://rociski.cz/img/servis.jpg',
 })
 </script>

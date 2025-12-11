@@ -28,10 +28,12 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Kurzy běžeckého lyžování | Ročiski',
-  meta: [
-    { name: 'description', content: 'Kurzy běžeckého lyžování pro začátečníky i pokročilé. Klasický styl, volný styl, soupaž. Trénujeme v okolí Nového Města na Moravě a Vysočina areny.' }
-  ]
+  description: 'Kurzy běžeckého lyžování pro začátečníky i pokročilé. Klasický styl, volný styl, soupaž. Trénujeme v okolí Nového Města na Moravě a Vysočina areny.',
+  ogTitle: 'Kurzy běžeckého lyžování | Ročiski',
+  ogDescription: 'Kurzy běžeckého lyžování pro začátečníky i pokročilé. Klasický styl, volný styl, soupaž.',
+  ogUrl: 'https://rociski.cz/kurzy/bezky',
+  ogImage: 'https://rociski.cz/img/kurzy.jpg',
 })
 </script>

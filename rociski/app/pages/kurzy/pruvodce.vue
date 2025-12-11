@@ -25,10 +25,12 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Průvodce srdcem Vysočiny | Ročiski',
-  meta: [
-    { name: 'description', content: 'Průvodcování po Vysočině – singltreky kolem Vysočina areny, nejhezčí místa Žďárských vrchů. Výlety na kole i pěšky s možností zapůjčení kol.' }
-  ]
+  description: 'Průvodcování po Vysočině – singltreky kolem Vysočina areny, nejhezčí místa Žďárských vrchů. Výlety na kole i pěšky s možností zapůjčení kol.',
+  ogTitle: 'Průvodce srdcem Vysočiny | Ročiski',
+  ogDescription: 'Průvodcování po Vysočině – singltreky kolem Vysočina areny, nejhezčí místa Žďárských vrchů.',
+  ogUrl: 'https://rociski.cz/kurzy/pruvodce',
+  ogImage: 'https://rociski.cz/img/pruvodce.jpg',
 })
 </script>

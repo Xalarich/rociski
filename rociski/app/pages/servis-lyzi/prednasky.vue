@@ -25,10 +25,12 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Přednášky o servisu lyží | Ročiski',
-  meta: [
-    { name: 'description', content: 'Přednášky o servisu běžeckých lyží pro skupiny. Naučíme vás, jak správně připravit lyže. Čas a místo dle domluvy.' }
-  ]
+  description: 'Přednášky o servisu běžeckých lyží pro skupiny. Naučíme vás, jak správně připravit lyže. Čas a místo dle domluvy.',
+  ogTitle: 'Přednášky o servisu lyží | Ročiski',
+  ogDescription: 'Přednášky o servisu běžeckých lyží pro skupiny. Naučíme vás, jak správně připravit lyže.',
+  ogUrl: 'https://rociski.cz/servis-lyzi/prednasky',
+  ogImage: 'https://rociski.cz/img/prednaska.jpg',
 })
 </script>

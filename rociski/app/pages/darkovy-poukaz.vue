@@ -227,10 +227,11 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Dárkové poukazy | Ročiski',
-  meta: [
-    { name: 'description', content: 'Darujte zážitek – dárkové poukazy na výuku běžeckého lyžování. Individuální lekce, lekce pro dva i skupinové kurzy. Platnost 12 měsíců.' }
-  ]
+  description: 'Darujte zážitek – dárkové poukazy na výuku běžeckého lyžování. Individuální lekce, lekce pro dva i skupinové kurzy. Platnost 12 měsíců.',
+  ogTitle: 'Dárkové poukazy | Ročiski',
+  ogDescription: 'Darujte zážitek – dárkové poukazy na výuku běžeckého lyžování. Platnost 12 měsíců.',
+  ogUrl: 'https://rociski.cz/darkovy-poukaz',
 })
 </script>

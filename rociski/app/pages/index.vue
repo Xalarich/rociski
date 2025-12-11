@@ -32,10 +32,13 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Ročiski – Výuka běžeckého lyžování',
-  meta: [
-    { name: 'description', content: 'Jsme Adéla a Jiří Ročárkovi – bývalí závodníci v dálkových bězích na lyžích. Nabízíme výuku běžeckého lyžování pro všechny úrovně v srdci Vysočiny.' }
-  ]
+  description: 'Jsme Adéla a Jiří Ročárkovi – bývalí závodníci v dálkových bězích na lyžích. Nabízíme výuku běžeckého lyžování pro všechny úrovně v srdci Vysočiny.',
+  ogTitle: 'Ročiski – Výuka běžeckého lyžování',
+  ogDescription: 'Nabízíme výuku běžeckého lyžování pro všechny úrovně v srdci Vysočiny nedaleko Nového Města na Moravě.',
+  ogUrl: 'https://rociski.cz',
+  twitterTitle: 'Ročiski – Výuka běžeckého lyžování',
+  twitterDescription: 'Nabízíme výuku běžeckého lyžování pro všechny úrovně v srdci Vysočiny.',
 })
 </script>
