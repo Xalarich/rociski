@@ -17,10 +17,10 @@
                 
                 <div class="space-y-4 text-gray-800 italic text-sm md:text-base leading-relaxed">
                     <p>
-                        Jsme Adéla a Jiří Ročárkovi – bývalí závodníci v dálkových bězích na lyžích s bohatými zkušenostmi z mezinárodních soutěží.
+                        Jsme Adéla a Jiří Ročárkovi – bývalí závodníci v dálkových bězích na lyžích a instruktoři běžkování s bohatými zkušenostmi z mezinárodních soutěží.
                     </p>
                     <p>
-                        Nabízíme výuku běžeckého lyžování pro všechny úrovně, od úplných začátečníků po pokročilé lyžaře. Působíme v srdci Vysočiny nedaleko Nového Města na Moravě.
+                        Nabízíme kurzy běžkování pro všechny úrovně – od úplných začátečníků po pokročilé lyžaře. Naše škola běžkování působí v srdci Vysočiny nedaleko Nového Města na Moravě, v oblasti Žďárských vrchů.
                     </p>
                     <p>
                         Rádi vám předáme naše zkušenosti a pomůžeme vám objevit krásu běžeckého lyžování.
@@ -33,12 +33,12 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Ročiski – Výuka běžeckého lyžování',
-  description: 'Jsme Adéla a Jiří Ročárkovi – bývalí závodníci v dálkových bězích na lyžích. Nabízíme výuku běžeckého lyžování pro všechny úrovně v srdci Vysočiny.',
-  ogTitle: 'Ročiski – Výuka běžeckého lyžování',
-  ogDescription: 'Nabízíme výuku běžeckého lyžování pro všechny úrovně v srdci Vysočiny nedaleko Nového Města na Moravě.',
+  title: 'Ročiski – Kurz běžkování Vysočina | Škola běžkování Nové Město na Moravě',
+  description: 'Kurzy běžkování a výuka běžkování na Vysočině. Instruktor běžkování Nové Město na Moravě. Individuální i skupinové kurzy běžkování, běžecké lyžování Žďárské vrchy.',
+  ogTitle: 'Ročiski – Kurz běžkování Vysočina | Škola běžkování',
+  ogDescription: 'Kurzy běžkování a výuka běžkování na Vysočině. Škola běžkování Nové Město na Moravě, Žďárské vrchy.',
   ogUrl: 'https://rociski.cz',
-  twitterTitle: 'Ročiski – Výuka běžeckého lyžování',
-  twitterDescription: 'Nabízíme výuku běžeckého lyžování pro všechny úrovně v srdci Vysočiny.',
+  twitterTitle: 'Ročiski – Kurz běžkování Vysočina | Výuka běžkování',
+  twitterDescription: 'Kurzy běžkování a výuka běžkování na Vysočině. Instruktor běžkování Nové Město na Moravě.',
 })
 </script>

@@ -26,10 +26,10 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Průvodce srdcem Vysočiny | Ročiski',
-  description: 'Průvodcování po Vysočině – singltreky kolem Vysočina areny, nejhezčí místa Žďárských vrchů. Výlety na kole i pěšky s možností zapůjčení kol.',
-  ogTitle: 'Průvodce srdcem Vysočiny | Ročiski',
-  ogDescription: 'Průvodcování po Vysočině – singltreky kolem Vysočina areny, nejhezčí místa Žďárských vrchů.',
+  title: 'Průvodce srdcem Vysočiny | Běžky Vysočina aréna | Žďárské vrchy',
+  description: 'Průvodcování po Vysočině – singltreky kolem Vysočina areny, nejhezčí místa Žďárských vrchů. Kam na běžky Vysočina? Výlety na kole i pěšky s možností zapůjčení kol.',
+  ogTitle: 'Průvodce srdcem Vysočiny | Běžky Vysočina aréna',
+  ogDescription: 'Průvodcování po Vysočině – singltreky kolem Vysočina areny, Žďárské vrchy. Kam na běžky Vysočina.',
   ogUrl: 'https://rociski.cz/kurzy/pruvodce',
   ogImage: 'https://rociski.cz/img/pruvodce.jpg',
 })

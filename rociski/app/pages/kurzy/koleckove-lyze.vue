@@ -16,8 +16,8 @@
                 <h1 class="text-3xl sm:text-4xl md:text-5xl italic text-gray-900 mb-4 md:mb-6">Kolečkové lyže</h1>
                 
                 <div class="space-y-4 text-gray-800 italic text-sm md:text-base leading-relaxed">
-                    <p>Mimo zimní měsíce nabízíme kurzy tréninku na kolečkových lyžích na vhodných asfaltových cestách bez provozu v okolí Nového Města na Moravě. </p>
-                    <p>I v létě se s tebou můžeme zaměřit na jakoukoliv z technik jízdy na kolečkových lyžích.</p>
+                    <p>Mimo zimní měsíce nabízíme kurzy tréninku na kolečkových lyžích na vhodných asfaltových cestách bez provozu v okolí Nového Města na Moravě na Vysočině. </p>
+                    <p>I v létě se s tebou můžeme zaměřit na jakoukoliv z technik jízdy – ať už je to technika bruslení nebo klasická technika běhu na lyžích.</p>
                 </div>
             </div>
         </div>
@@ -27,10 +27,10 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Kolečkové lyže | Ročiski',
-  description: 'Kurzy na kolečkových lyžích v létě. Trénink techniky jízdy na asfaltových cestách v okolí Nového Města na Moravě.',
-  ogTitle: 'Kolečkové lyže | Ročiski',
-  ogDescription: 'Kurzy na kolečkových lyžích v létě. Trénink techniky jízdy na asfaltových cestách.',
+  title: 'Kolečkové lyže | Letní trénink techniky běhu na lyžích | Vysočina',
+  description: 'Kurzy na kolečkových lyžích v létě na Vysočině. Technika bruslení na lyžích, technika běhu na lyžích. Trénink v okolí Nového Města na Moravě.',
+  ogTitle: 'Kolečkové lyže | Letní trénink techniky běhu na lyžích',
+  ogDescription: 'Kurzy na kolečkových lyžích v létě. Technika bruslení i klasická technika. Vysočina.',
   ogUrl: 'https://rociski.cz/kurzy/koleckove-lyze',
   ogImage: 'https://rociski.cz/img/koleckace.jpg',
 })

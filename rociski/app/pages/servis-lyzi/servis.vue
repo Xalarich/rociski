@@ -13,10 +13,10 @@
         <div class="relative z-10 flex justify-start items-center py-8 px-4 md:px-8 lg:px-16">
             <!-- Text Box -->
             <div class="bg-white/80 backdrop-blur-xs p-6 sm:p-8 max-w-lg shadow-lg rounded-2xl">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl italic text-gray-900 mb-4 md:mb-6">Servis lyží</h1>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl italic text-gray-900 mb-4 md:mb-6">Servis běžek</h1>
                 
                 <div class="space-y-4 text-gray-800 italic text-sm md:text-base leading-relaxed">
-                    <p>Potřebuješ nachystat lyže na trénink, nebo závod? Zajistíme ti profesionální servis. Naše služby můžete využít v letošní sezóně 2025/26 přímo na závodě Toblach-Cortina, dále budeme přítomni i na slavné italské Marcialonze a domácí Jizerské 50.</p>
+                    <p>Potřebuješ nachystat lyže na trénink nebo závod? Zajistíme ti profesionální servis běžek na Vysočině. Poradíme, jak namazat běžky stoupacími i skluznými vosky. Naše služby můžete využít v letošní sezóně 2025/26 přímo na závodě Toblach-Cortina, dále budeme přítomni i na slavné italské Marcialonze a domácí Jizerské 50.</p>
                 </div>
             </div>
         </div>
@@ -26,10 +26,10 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Servis lyží | Ročiski',
-  description: 'Profesionální servis běžeckých lyží na závody. Přítomni na Toblach-Cortina, Marcialonga a Jizerské 50. Sezóna 2025/26.',
-  ogTitle: 'Servis lyží | Ročiski',
-  ogDescription: 'Profesionální servis běžeckých lyží na závody. Sezóna 2025/26.',
+  title: 'Servis běžek Vysočina | Jak namazat běžky | Mazání běžek klistr',
+  description: 'Servis běžek Vysočina – profesionální příprava běžeckých lyží. Poradíme jak namazat běžky, mazání běžek klistrem. Přítomni na Toblach-Cortina, Marcialonga, Jizerské 50.',
+  ogTitle: 'Servis běžek Vysočina | Jak namazat běžky',
+  ogDescription: 'Profesionální servis běžek na Vysočině. Jak namazat běžky, mazání běžek klistrem.',
   ogUrl: 'https://rociski.cz/servis-lyzi/servis',
   ogImage: 'https://rociski.cz/img/servis.jpg',
 })

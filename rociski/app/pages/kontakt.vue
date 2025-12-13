@@ -80,7 +80,7 @@
                     <!-- Decorative Element -->
                     <div class="mt-8 pt-6 border-t border-gray-100">
                         <p class="text-sm text-gray-500 italic">
-                            Neváhejte nás kontaktovat s jakýmkoliv dotazem ohledně kurzů či servisu lyží.
+                            Neváhejte nás kontaktovat s jakýmkoliv dotazem ohledně kurzů běžkování či servisu běžek.
                         </p>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                     </svg>
                 </div>
                 <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-2">Nové Město na Moravě</h3>
-                <p class="text-gray-600 text-sm md:text-base">V srdci Vysočiny – ideální místo pro běžecké lyžování</p>
+                <p class="text-gray-600 text-sm md:text-base">V srdci Vysočiny – ideální místo pro běžkování. Kam na běžky na Vysočině? Jsme tu pro vás!</p>
             </div>
         </div>
     </div>
@@ -102,10 +102,10 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Kontakt | Ročiski',
-  description: 'Kontaktujte nás – Adéla Ročárková, Nové Město na Moravě. Telefon: +420 777 845 298, email: rociski@gmail.com. Kurzy běžeckého lyžování na Vysočině.',
-  ogTitle: 'Kontakt | Ročiski',
-  ogDescription: 'Kontaktujte nás – Adéla Ročárková. Tel: +420 777 845 298, email: rociski@gmail.com.',
+  title: 'Kontakt | Kurz běžkování Vysočina | Instruktor běžkování Nové Město na Moravě',
+  description: 'Kontaktujte nás – kurzy běžkování Vysočina, instruktor běžkování Nové Město na Moravě. Tel: +420 777 845 298, email: rociski@gmail.com. Kam na běžky Vysočina.',
+  ogTitle: 'Kontakt | Kurz běžkování Vysočina',
+  ogDescription: 'Kontaktujte nás – kurzy běžkování Vysočina. Tel: +420 777 845 298, email: rociski@gmail.com.',
   ogUrl: 'https://rociski.cz/kontakt',
 })
 </script>

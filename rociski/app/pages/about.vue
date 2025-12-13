@@ -17,7 +17,7 @@
                 
                 <div class="space-y-4 text-gray-800 italic text-sm leading-relaxed">
                     <p>
-                        Už je to pár let, co jsme se závoděním skončili. Byla to poměrně dlouhá cesta, během níž jsme se snažili zdokonalovat nejen z hlediska fyzické kondice, ale také techniky běhu na lyžích. Kdybychom měli na začátku tolik znalostí, kolik jsme jich měli na konci kariéry, všechno by bylo snazší a výsledky možná ještě lepší. Rádi bychom předali nabyté zkušenosti dalším lyžařům bez ohledu na jejich výkonnost.
+                        Už je to pár let, co jsme se závoděním skončili. Byla to poměrně dlouhá cesta, během níž jsme se snažili zdokonalovat nejen z hlediska fyzické kondice, ale také techniky běhu na lyžích. Kdybychom měli na začátku tolik znalostí, kolik jsme jich měli na konci kariéry, všechno by bylo snazší a výsledky možná ještě lepší. Jako instruktoři běžkování bychom rádi předali nabyté zkušenosti dalším lyžařům bez ohledu na jejich výkonnost.
                     </p>
                     
                     <p>
@@ -44,10 +44,10 @@
 
 <script setup>
 useSeoMeta({
-  title: 'O nás | Ročiski',
-  description: 'Adéla a Jiří Ročárkovi – dvojnásobný Mistr Evropy v dálkových bězích a vítězka Worldloppetu. Předáváme zkušenosti dalším lyžařům na Vysočině.',
-  ogTitle: 'O nás | Ročiski',
-  ogDescription: 'Adéla a Jiří Ročárkovi – dvojnásobný Mistr Evropy v dálkových bězích. Předáváme zkušenosti dalším lyžařům.',
+  title: 'O nás | Instruktor běžkování Nové Město na Moravě | Ročiski',
+  description: 'Adéla a Jiří Ročárkovi – instruktoři běžkování a bývalí závodníci. Škola běžkování Nové Město na Moravě. Kurzy běžkování Vysočina, běžecké lyžování Žďárské vrchy.',
+  ogTitle: 'O nás | Instruktor běžkování Nové Město na Moravě',
+  ogDescription: 'Instruktoři běžkování Adéla a Jiří Ročárkovi. Škola běžkování Nové Město na Moravě, Vysočina.',
   ogUrl: 'https://rociski.cz/about',
 })
 </script>

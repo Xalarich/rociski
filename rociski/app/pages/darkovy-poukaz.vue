@@ -21,12 +21,12 @@
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-lg md:text-xl font-semibold text-gray-800">Individuální lekce</h2>
+                            <h2 class="text-lg md:text-xl font-semibold text-gray-800">Individuální výuka</h2>
                             <span class="text-sky-600 font-medium">od 1 400 Kč</span>
                         </div>
                     </div>
                     <p class="text-gray-600 mb-4 text-sm md:text-base">
-                        Osobní výuka běžeckého lyžování s plnou pozorností instruktora. Ideální pro začátečníky i pokročilé, kteří chtějí zlepšit techniku.
+                        Osobní kurz běžkování s plnou pozorností instruktora. Ideální pro začátečníky i pokročilé, kteří chtějí zlepšit techniku běhu na lyžích.
                     </p>
                     <ul class="space-y-2 text-gray-600 text-sm">
                         <li class="flex items-center">
@@ -97,12 +97,12 @@
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-lg md:text-xl font-semibold text-gray-800">Skupinová lekce</h2>
+                            <h2 class="text-lg md:text-xl font-semibold text-gray-800">Skupinový kurz</h2>
                             <span class="text-sky-600 font-medium">od 3 000 Kč</span>
                         </div>
                     </div>
                     <p class="text-gray-600 mb-4 text-sm md:text-base">
-                        Ideální pro rodiny nebo partu přátel. Společné lyžování v krásné přírodě Vysočiny.
+                        Ideální pro rodiny nebo partu přátel. Skupinové kurzy běžkování v krásné přírodě Vysočiny.
                     </p>
                     <ul class="space-y-2 text-gray-600 text-sm">
                         <li class="flex items-center">
@@ -228,10 +228,10 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Dárkové poukazy | Ročiski',
-  description: 'Darujte zážitek – dárkové poukazy na výuku běžeckého lyžování. Individuální lekce, lekce pro dva i skupinové kurzy. Platnost 12 měsíců.',
-  ogTitle: 'Dárkové poukazy | Ročiski',
-  ogDescription: 'Darujte zážitek – dárkové poukazy na výuku běžeckého lyžování. Platnost 12 měsíců.',
+  title: 'Dárkové poukazy | Kurz běžkování Vysočina | Výuka běžkování',
+  description: 'Darujte zážitek – dárkové poukazy na kurz běžkování. Individuální výuka běžkování, skupinové kurzy běžkování na Vysočině. Platnost 12 měsíců.',
+  ogTitle: 'Dárkové poukazy | Kurz běžkování',
+  ogDescription: 'Darujte zážitek – dárkové poukazy na kurz běžkování na Vysočině. Platnost 12 měsíců.',
   ogUrl: 'https://rociski.cz/darkovy-poukaz',
 })
 </script>
