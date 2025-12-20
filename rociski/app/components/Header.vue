@@ -1,5 +1,22 @@
 <template>
     <header class="bg-white z-50">
+      <!-- Announcement Bar - Running Banner -->
+      <div class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 py-2.5 overflow-hidden relative">
+        <div class="marquee-wrapper">
+          <div class="marquee-content">
+            <span v-for="i in 3" :key="i" class="inline-flex items-center gap-2 text-sm font-medium text-white px-8">
+              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+              </svg>
+              <span>Moc se omlouváme, pokud jsme vám neodpověděli. Měli jsme technické problémy se starým e-mailem. Napište nám prosím znovu na nový e-mail</span>
+              <a href="mailto:jiri.rocarek@seznam.cz" class="underline font-bold hover:text-amber-100 transition-colors">jiri.rocarek@seznam.cz</a>
+              <span>, ozveme se vám co nejdříve!</span>
+              <span class="text-amber-200 mx-4">✦</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
       <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <NuxtLink to="/" class="-m-1.5 p-1.5">
@@ -265,5 +282,31 @@
     { name: 'Přednášky o servisu lyží', href: '/servis-lyzi/prednasky' },
   ]
   
-  const mobileMenuOpen = ref(false)
-  </script>
+const mobileMenuOpen = ref(false)
+</script>
+
+<style scoped>
+.marquee-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 25s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+</style>

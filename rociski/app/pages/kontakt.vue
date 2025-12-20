@@ -48,8 +48,8 @@
                             <svg class="w-5 h-5 text-sky-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            <a href="mailto:rociski@gmail.com" class="hover:text-sky-700 transition-colors">
-                                rociski@gmail.com
+                            <a href="mailto:jiri.rocarek@seznam.cz" class="hover:text-sky-700 transition-colors">
+                                jiri.rocarek@seznam.cz
                             </a>
                         </div>
                     </div>
@@ -103,9 +103,9 @@
 <script setup>
 useSeoMeta({
   title: 'Kontakt | Kurz běžkování Vysočina | Instruktor běžkování Nové Město na Moravě',
-  description: 'Kontaktujte nás – kurzy běžkování Vysočina, instruktor běžkování Nové Město na Moravě. Tel: +420 777 845 298, email: rociski@gmail.com. Kam na běžky Vysočina.',
+  description: 'Kontaktujte nás – kurzy běžkování Vysočina, instruktor běžkování Nové Město na Moravě. Tel: +420 777 845 298, email: jiri.rocarek@seznam.cz. Kam na běžky Vysočina.',
   ogTitle: 'Kontakt | Kurz běžkování Vysočina',
-  ogDescription: 'Kontaktujte nás – kurzy běžkování Vysočina. Tel: +420 777 845 298, email: rociski@gmail.com.',
+  ogDescription: 'Kontaktujte nás – kurzy běžkování Vysočina. Tel: +420 777 845 298, email: jiri.rocarek@seznam.cz.',
   ogUrl: 'https://rociski.cz/kontakt',
 })
 </script>
