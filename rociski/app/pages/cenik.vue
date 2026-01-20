@@ -25,12 +25,7 @@
                             <tr class="border-b-2 border-sky-200">
                                 <th class="text-left py-4 px-2 sm:px-4 font-semibold text-gray-700 text-xs sm:text-sm md:text-base">Počet osob</th>
                                 <th class="text-center py-4 px-2 sm:px-4 font-semibold text-gray-700 text-xs sm:text-sm md:text-base">
-                                    <span class="block text-xs sm:text-sm text-gray-500">Všední den</span>
-                                    <span class="text-sky-700">Kč</span>
-                                </th>
-                                <th class="text-center py-4 px-2 sm:px-4 font-semibold text-gray-700 text-xs sm:text-sm md:text-base">
-                                    <span class="block text-xs sm:text-sm text-gray-500">Víkend</span>
-                                    <span class="text-sky-700">Kč</span>
+                                    <span class="text-sky-700">Cena</span>
                                 </th>
                             </tr>
                         </thead>
@@ -42,8 +37,7 @@
                                         1 osoba / 1,5 hodiny
                                     </div>
                                 </td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><span>1 400 Kč/1 osoba</span></td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><span>1 800 Kč/1 osoba</span></td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><span>1 200 Kč</span></td>
                             </tr>
                             <tr class="border-b border-gray-100 hover:bg-sky-50 transition-colors">
                                 <td class="py-4 px-2 sm:px-4 text-gray-600 text-xs sm:text-sm md:text-base">
@@ -52,41 +46,25 @@
                                         2 osoby / 1,5 hodiny
                                     </div>
                                 </td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><div class="flex flex-col align-start"><span>2 400 Kč/2 osoby</span><span class="text-xs sm:text-sm text-gray-500">1 200 Kč/osoba</span></div></td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><div class="flex flex-col align-start"><span>3 200 Kč/2 osoby</span><span class="text-xs sm:text-sm text-gray-500">1 600 Kč/osoba</span></div></td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><div class="flex flex-col align-start"><span>2 000 Kč</span><span class="text-xs sm:text-sm text-gray-500">1 000 Kč/osoba</span></div></td>
                             </tr>
-                            <tr class="border-b border-gray-100 hover:bg-sky-50 transition-colors">
+                            <tr class="hover:bg-sky-50 transition-colors">
                                 <td class="py-4 px-2 sm:px-4 text-gray-600 text-xs sm:text-sm md:text-base">
                                     <div class="flex items-center">
                                         <span class="w-6 h-6 sm:w-8 sm:h-8 bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-semibold mr-2 sm:mr-3 text-xs sm:text-sm">3</span>
                                         3 osoby / 1,5 hodiny
                                     </div>
                                 </td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><div class="flex flex-col align-start"><span>3 000 Kč/3 osoby</span><span class="text-xs sm:text-sm text-gray-500">1 000 Kč/osoba</span></div></td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><div class="flex flex-col align-start"><span>4 200 Kč/3 osoby</span><span class="text-xs sm:text-sm text-gray-500">1 400 Kč/osoba</span></div></td>
-                            </tr>
-                            <tr class="border-b border-gray-100 hover:bg-sky-50 transition-colors">
-                                <td class="py-4 px-2 sm:px-4 text-gray-600 text-xs sm:text-sm md:text-base">
-                                    <div class="flex items-center">
-                                        <span class="w-6 h-6 sm:w-8 sm:h-8 bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-semibold mr-2 sm:mr-3 text-xs sm:text-sm">4</span>
-                                        4 osoby / 1,5 hodiny
-                                    </div>
-                                </td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><div class="flex flex-col align-start"><span>3 200 Kč/4 osoby</span><span class="text-xs sm:text-sm text-gray-500">800 Kč/osoba</span></div></td>
-                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><div class="flex flex-col align-start"><span>4 800 Kč/4 osoby</span><span class="text-xs sm:text-sm text-gray-500">1 200 Kč/osoba</span></div></td>
-                            </tr>
-                            <tr class="hover:bg-sky-50 transition-colors">
-                                <td class="py-4 px-2 sm:px-4 text-gray-600 text-xs sm:text-sm md:text-base">
-                                    <div class="flex items-center">
-                                        <span class="w-6 h-6 sm:w-8 sm:h-8 bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-semibold mr-2 sm:mr-3 text-xs sm:text-sm">5+</span>
-                                        5 a více / 1,5 hodiny
-                                    </div>
-                                </td>
-                                <td class="py-4 px-2 sm:px-4 text-center text-gray-600 italic text-xs sm:text-sm md:text-base">dle domluvy</td>
-                                <td class="py-4 px-2 sm:px-4 text-center text-gray-600 italic text-xs sm:text-sm md:text-base">dle domluvy</td>
+                                <td class="py-4 px-2 sm:px-4 text-center font-semibold text-gray-800 text-xs sm:text-sm md:text-base"><div class="flex flex-col align-start"><span>2 800 Kč</span><span class="text-xs sm:text-sm text-gray-500">933 Kč/osoba</span></div></td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-gray-100">
+                    <p class="text-sm text-gray-500 italic">
+                        Čas i cena kurzu se dá dohodnout individuálně dle vašich potřeb.
+                    </p>
                 </div>
             </div>
 
@@ -160,9 +138,9 @@
 <script setup>
 useSeoMeta({
   title: 'Ceník kurzů běžkování | Individuální a skupinové kurzy běžkování',
-  description: 'Ceník kurzů běžkování – individuální výuka běžkování i skupinové kurzy běžkování od 1 400 Kč za 1,5 hodiny. Kurz běžkování Vysočina, servis běžek dle domluvy.',
+  description: 'Ceník kurzů běžkování – individuální výuka běžkování i skupinové kurzy běžkování od 1 200 Kč za 1,5 hodiny. Kurz běžkování Vysočina, servis běžek dle domluvy.',
   ogTitle: 'Ceník kurzů běžkování | Ročiski',
-  ogDescription: 'Ceník kurzů běžkování – individuální výuka běžkování i skupinové kurzy od 1 400 Kč.',
+  ogDescription: 'Ceník kurzů běžkování – individuální výuka běžkování i skupinové kurzy od 1 200 Kč.',
   ogUrl: 'https://rociski.cz/cenik',
 })
 </script>
