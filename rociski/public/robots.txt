@@ -1,4 +1,8 @@
-User-Agent: *
+User-agent: *
 Allow: /
+Disallow: /_nuxt/
+Disallow: /_nuxt/*
+Disallow: /admin/
+Disallow: /api/
 
 Sitemap: https://rociski.cz/sitemap.xml

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-headlessui',
+    '@nuxtjs/sitemap',
   ],
   
   css: ['~/assets/main.css'],

@@ -22,7 +22,7 @@
                         </div>
                         <div>
                             <h2 class="text-lg md:text-xl font-semibold text-gray-800">Individuální výuka</h2>
-                            <span class="text-sky-600 font-medium">od 1 400 Kč</span>
+                            <span class="text-sky-600 font-medium">od 1 200 Kč</span>
                         </div>
                     </div>
                     <p class="text-gray-600 mb-4 text-sm md:text-base">
@@ -60,7 +60,7 @@
                         </div>
                         <div>
                             <h2 class="text-lg md:text-xl font-semibold text-gray-800">Lekce pro dva</h2>
-                            <span class="text-sky-600 font-medium">od 2 400 Kč</span>
+                            <span class="text-sky-600 font-medium">od 2 000 Kč</span>
                         </div>
                     </div>
                     <p class="text-gray-600 mb-4 text-sm md:text-base">
@@ -98,7 +98,7 @@
                         </div>
                         <div>
                             <h2 class="text-lg md:text-xl font-semibold text-gray-800">Skupinový kurz</h2>
-                            <span class="text-sky-600 font-medium">od 3 000 Kč</span>
+                            <span class="text-sky-600 font-medium">od 2 800 Kč</span>
                         </div>
                     </div>
                     <p class="text-gray-600 mb-4 text-sm md:text-base">
@@ -109,7 +109,7 @@
                             <svg class="w-4 h-4 text-sky-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            1,5 hodiny výuky pro 3-4 osoby
+                            1,5 hodiny výuky pro 3 osoby
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-sky-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

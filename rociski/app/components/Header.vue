@@ -1,7 +1,7 @@
 <template>
     <header class="bg-white z-50">
       <!-- Announcement Bar - Running Banner -->
-      <div class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 py-2.5 overflow-hidden relative">
+      <div class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 py-2.5 overflow-hidden relative hidden">
         <div class="marquee-wrapper">
           <div class="marquee-content">
             <span v-for="i in 3" :key="i" class="inline-flex items-center gap-2 text-sm font-medium text-white px-8">
@@ -108,6 +108,18 @@
               </PopoverPanel>
             </transition>
           </Popover>
+
+          <NuxtLink 
+            to="/clanky" 
+            class="relative text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-50 hover:text-sky-700"
+            :class="{ 'text-sky-700 bg-sky-50': route.path.startsWith('/clanky') }"
+          >
+            Články
+            <span 
+              v-if="route.path.startsWith('/clanky')" 
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] h-0.5 bg-sky-500 rounded-full"
+            ></span>
+          </NuxtLink>
   
           <NuxtLink 
             to="/cenik" 
@@ -216,6 +228,15 @@
                     </NuxtLink>
                   </DisclosurePanel>
                 </Disclosure>
+
+                <NuxtLink 
+                  to="/clanky" 
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
+                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': route.path.startsWith('/clanky') }"
+                  @click="mobileMenuOpen = false"
+                >
+                  Články
+                </NuxtLink>
 
                 <NuxtLink 
                   to="/cenik" 
