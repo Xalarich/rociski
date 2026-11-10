@@ -1,14 +1,16 @@
 # Webglobe: Apache za nginx. Po nasazení ověřit, že pravidla platí (curl -I).
 
-RewriteEngine On
+<IfModule mod_rewrite.c>
+  RewriteEngine On
 
-# Jeden host: www a vps → https://rociski.cz
-RewriteCond %{HTTP_HOST} ^(www|vps)\.rociski\.cz$ [NC]
-RewriteRule ^ https://rociski.cz%{REQUEST_URI} [R=301,L]
+  # Jeden host: www a vps → https://rociski.cz
+  RewriteCond %{HTTP_HOST} ^(www|vps)\.rociski\.cz$ [NC]
+  RewriteRule ^ https://rociski.cz%{REQUEST_URI} [R=301,L]
 
-# /neco/index.html → /neco/
-RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
-RewriteRule ^ /%1 [R=301,L]
+  # /neco/index.html → /neco/
+  RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+  RewriteRule ^ /%1 [R=301,L]
+</IfModule>
 
 # Neexistující URL → česká stránka 404 (Nuxt SPA fallback) se stavem 404
 ErrorDocument 404 /404.html
