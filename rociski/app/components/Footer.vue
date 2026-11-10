@@ -50,16 +50,11 @@
     </p>
 
     <!-- Cookie lišta: jen na klientu (volba je v localStorage), odmítnutí stejně snadné jako souhlas -->
-    <div v-if="showConsent" role="dialog" aria-label="Souhlas s cookies" class="fixed inset-x-0 bottom-0 z-50 bg-white border-t border-gray-200 shadow-lg">
-      <div class="mx-auto max-w-4xl px-6 py-4 flex flex-col md:flex-row gap-4 md:items-center text-sm text-gray-700">
-        <p class="flex-1">
-          Rádi bychom měřili návštěvnost přes Google Analytics. Pomůže nám zjistit, co na webu funguje.
-          Ukládá analytické cookies <code>_ga</code> až na 2 roky. Souhlas můžete kdykoli změnit odkazem „Nastavení cookies“ v patičce.
-        </p>
-        <div class="flex gap-2 shrink-0">
-          <button type="button" class="px-5 py-2 rounded-full bg-sky-700 text-white font-semibold hover:bg-sky-800" @click="setConsent('denied')">Odmítnout</button>
-          <button type="button" class="px-5 py-2 rounded-full bg-sky-700 text-white font-semibold hover:bg-sky-800" @click="setConsent('granted')">Přijmout</button>
-        </div>
+    <div v-if="showConsent" role="dialog" aria-label="Souhlas s cookies" class="fixed bottom-3 left-3 right-3 sm:right-auto sm:max-w-xs z-50 bg-white rounded-xl shadow-lg ring-1 ring-gray-200 p-3 text-xs text-gray-700">
+      <p class="mb-2">Měříme návštěvnost přes Google Analytics (cookies <code>_ga</code>, až 2 roky).</p>
+      <div class="flex gap-2">
+        <button type="button" class="flex-1 px-3 py-1.5 rounded-full bg-sky-700 text-white font-semibold hover:bg-sky-800" @click="setConsent('denied')">Odmítnout</button>
+        <button type="button" class="flex-1 px-3 py-1.5 rounded-full bg-sky-700 text-white font-semibold hover:bg-sky-800" @click="setConsent('granted')">Přijmout</button>
       </div>
     </div>
   </footer>
