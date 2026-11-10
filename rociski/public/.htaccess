@@ -1,0 +1,36 @@
+# Webglobe: Apache za nginx. Po nasazení ověřit, že pravidla platí (curl -I).
+
+RewriteEngine On
+
+# Jeden host: www a vps → https://rociski.cz
+RewriteCond %{HTTP_HOST} ^(www|vps)\.rociski\.cz$ [NC]
+RewriteRule ^ https://rociski.cz%{REQUEST_URI} [R=301,L]
+
+# /neco/index.html → /neco/
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Neexistující URL → česká stránka 404 (Nuxt SPA fallback) se stavem 404
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Fallback stránky nemají být v indexu
+  <FilesMatch "^(200|404)\.html$">
+    Header set X-Robots-Tag "noindex"
+  </FilesMatch>
+
+  # Soubory s hashem v názvu se nemění → dlouhá cache. HTML vždy ověřit.
+  <If "%{REQUEST_URI} =~ m#^/_nuxt/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+  <ElseIf "%{REQUEST_URI} =~ m#\.(jpe?g|png|webp|svg|ico)$#">
+    Header set Cache-Control "public, max-age=604800"
+  </ElseIf>
+  <Else>
+    Header set Cache-Control "no-cache"
+  </Else>
+</IfModule>

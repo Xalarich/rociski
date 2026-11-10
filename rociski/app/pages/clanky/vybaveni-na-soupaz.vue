@@ -23,7 +23,7 @@
             <!-- Featured Image -->
             <div class="mb-10 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                    src="/img/clanky/soupaz.jpg" 
+                    src="/img/clanky/soupaz.webp" srcset="/img/clanky/soupaz-960.webp 960w, /img/clanky/soupaz.webp 1920w" fetchpriority="high" sizes="(max-width: 896px) 100vw, 896px" width="1920" height="2876" 
                     alt="Vybavení na soupaž"
                     class="w-full h-auto object-cover"
                 />
@@ -115,11 +115,8 @@
 
 <script setup>
 useSeoMeta({
-    title: 'Jak vybrat vybavení na soupaž | Lyže, boty a hole pro dálkové běhy',
-    description: 'Kompletní průvodce výběrem vybavení na soupaž. Jaké lyže, boty a hole zvolit pro dálkové běžecké závody. Tipy pro začátečníky i pokročilé soupažáky.',
-    ogTitle: 'Vybavení na soupaž | Ročiski',
-    ogDescription: 'Jak vybrat ideální lyže, boty a hole pro soupaž a dálkové běžecké závody.',
-    ogUrl: 'https://rociski.cz/clanky/vybaveni-na-soupaz',
+    title: 'Vybavení na soupaž – lyže, boty a hole',
+    description: 'Jaké lyže, boty a hole zvolit na soupaž a dálkové běžecké závody. Praktické tipy pro začátečníky i pokročilé soupažáky.',
     ogImage: 'https://rociski.cz/img/clanky/soupaz.jpg',
 })
 </script>

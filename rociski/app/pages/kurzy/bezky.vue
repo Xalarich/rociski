@@ -3,8 +3,8 @@
         <!-- Background Image -->
         <div class="absolute inset-0 min-h-[800px]">
             <img 
-                src="/img/kurzy.jpg" 
-                alt="Cross-country skiing" 
+                src="/img/kurzy.webp" srcset="/img/kurzy-960.webp 960w, /img/kurzy.webp 1920w" fetchpriority="high" sizes="100vw" 
+                alt="Kurz běžkování u Nového Města na Moravě" 
                 class="w-full h-full object-cover object-[30%_0%] md:object-[75%_0%]"
             />
         </div> 
@@ -29,11 +29,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Kurzy běžkování | Výuka běžkování Vysočina | Kurz bruslení na běžkách',
-  description: 'Kurzy běžkování a výuka běžkování na Vysočině. Individuální výuka běžkování, skupinové kurzy běžkování. Kurz bruslení na běžkách, výuka klasiky na běžkách. Běžky Vysočina aréna, běžecké lyžování Žďárské vrchy.',
-  ogTitle: 'Kurzy běžkování | Výuka běžkování Vysočina',
-  ogDescription: 'Kurzy běžkování pro začátečníky i pokročilé. Kurz bruslení na běžkách, výuka klasiky. Běžkování Vysočina.',
-  ogUrl: 'https://rociski.cz/kurzy/bezky',
+  title: 'Kurz běžkování a běžeckého lyžování na Vysočině',
+  description: 'Individuální i skupinové kurzy běžeckého lyžování u Nového Města na Moravě. Klasika i bruslení pro začátečníky, pokročilé i závodníky. Od 1 200 Kč.',
   ogImage: 'https://rociski.cz/img/kurzy.jpg',
 })
 </script>

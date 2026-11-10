@@ -3,8 +3,8 @@
         <!-- Background Image -->
         <div class="absolute inset-0 min-h-[800px]">
             <img 
-                src="/img/main.jpg" 
-                alt="Cross-country skiing" 
+                src="/img/main.webp" srcset="/img/main-960.webp 960w, /img/main.webp 1920w" fetchpriority="high" sizes="100vw" 
+                alt="Běžecké lyžování na Vysočině" 
                 class="w-full h-full object-cover object-[65%_10%] sm:object-[2%_10%] lg:object-[0%_10%]"
             />
         </div>
@@ -44,10 +44,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'O nás | Instruktor běžkování Nové Město na Moravě | Ročiski',
-  description: 'Adéla a Jiří Ročárkovi – instruktoři běžkování a bývalí závodníci. Škola běžkování Nové Město na Moravě. Kurzy běžkování Vysočina, běžecké lyžování Žďárské vrchy.',
-  ogTitle: 'O nás | Instruktor běžkování Nové Město na Moravě',
-  ogDescription: 'Instruktoři běžkování Adéla a Jiří Ročárkovi. Škola běžkování Nové Město na Moravě, Vysočina.',
-  ogUrl: 'https://rociski.cz/about',
+  title: 'O nás – Adéla a Jiří Ročárkovi',
+  description: 'Adéla a Jiří Ročárkovi, bývalí závodníci v dálkových bězích na lyžích, učí běžecké lyžování a servisují běžky u Nového Města na Moravě.',
 })
 </script>

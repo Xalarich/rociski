@@ -3,8 +3,8 @@
         <!-- Background Image -->
         <div class="absolute inset-0 min-h-[800px]">
             <img 
-                src="/img/main.jpg" 
-                alt="Cross-country skiing" 
+                src="/img/main.webp" srcset="/img/main-960.webp 960w, /img/main.webp 1920w" fetchpriority="high" sizes="100vw" 
+                alt="Běžecké lyžování na Vysočině" 
                 class="w-full h-full object-cover object-[65%_10%] lg:object-[0%_10%]"
             />
         </div>
@@ -13,7 +13,7 @@
         <div class="relative z-10 flex items-start py-8 px-4 md:px-8 lg:px-16">
             <!-- Text Box -->
             <div class="bg-white/80 backdrop-blur-xs p-6 sm:p-8 max-w-md shadow-lg rounded-2xl">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl italic text-gray-900 mb-4 md:mb-6">Vítejte na stránkách Ročiski</h1>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl italic text-gray-900 mb-4 md:mb-6">Ročiski – škola běžeckého lyžování na Vysočině</h1>
                 
                 <div class="space-y-4 text-gray-800 italic text-sm md:text-base leading-relaxed">
                     <p>
@@ -26,6 +26,12 @@
                         Rádi vám předáme naše zkušenosti a pomůžeme vám objevit krásu běžeckého lyžování.
                     </p>
                 </div>
+
+                <div class="mt-6 flex flex-wrap gap-2 text-sm font-semibold">
+                    <NuxtLink to="/kurzy/bezky" class="px-4 py-2 rounded-full bg-sky-700 text-white hover:bg-sky-800">Kurzy běžkování</NuxtLink>
+                    <NuxtLink to="/servis-lyzi/servis" class="px-4 py-2 rounded-full bg-white text-sky-800 ring-1 ring-sky-200 hover:bg-sky-50">Servis běžek</NuxtLink>
+                    <NuxtLink to="/cenik" class="px-4 py-2 rounded-full bg-white text-sky-800 ring-1 ring-sky-200 hover:bg-sky-50">Ceník</NuxtLink>
+                </div>
             </div>
         </div>
     </div>
@@ -33,12 +39,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Ročiski – Kurz běžkování Vysočina | Škola běžkování Nové Město na Moravě',
-  description: 'Kurzy běžkování a výuka běžkování na Vysočině. Instruktor běžkování Nové Město na Moravě. Individuální i skupinové kurzy běžkování, běžecké lyžování Žďárské vrchy.',
-  ogTitle: 'Ročiski – Kurz běžkování Vysočina | Škola běžkování',
-  ogDescription: 'Kurzy běžkování a výuka běžkování na Vysočině. Škola běžkování Nové Město na Moravě, Žďárské vrchy.',
-  ogUrl: 'https://rociski.cz',
-  twitterTitle: 'Ročiski – Kurz běžkování Vysočina | Výuka běžkování',
-  twitterDescription: 'Kurzy běžkování a výuka běžkování na Vysočině. Instruktor běžkování Nové Město na Moravě.',
+  title: 'Škola běžeckého lyžování na Vysočině',
+  description: 'Kurzy běžkování u Nového Města na Moravě pro začátečníky i pokročilé. Klasika i bruslení s bývalými závodníky Adélou a Jiřím Ročárkovými.',
 })
 </script>

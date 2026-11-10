@@ -19,7 +19,8 @@
                 >
                     <div class="aspect-video overflow-hidden">
                         <img 
-                            :src="article.image" 
+                            :src="article.image.replace('.jpg', '-960.webp')"
+                            loading="lazy" 
                             :alt="article.title"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 object-top"
                         />
@@ -47,6 +48,12 @@
 <script setup>
 const articles = [
     {
+        slug: 'zaletneni-lyzi',
+        title: 'Zaletnění lyží: Jak správně ošetřit běžky po sezóně',
+        excerpt: 'Konec sezóny je ideální čas na očištění, naparafínování a správné uskladnění lyží. Díky jednoduché péči zůstanou běžky ve skvělé kondici i na další zimu.',
+        image: '/img/prednaska.jpg'
+    },
+    {
         slug: 'delka-a-typ-lyzi',
         title: 'Délka a typ lyží: Průvodce výběrem běžek',
         excerpt: 'Přemýšlíte nad novým běžkařským vybavení? Ať už jste začátečník, turista, výkonnostní lyžař či závodník, tento průvodce vám pomůže zorientovat se v typech běžek a zvolit si správnou délku.',
@@ -60,7 +67,7 @@ const articles = [
     },
     {
         slug: 'pece-o-no-wax-bezky',
-        title: 'Péče o NO WAX běžky',
+        title: 'Péče o skin a šupinové běžky (NO WAX)',
         excerpt: 'Klasické běžecké lyže, které nevyžadují aplikaci stoupacího vosku, souhrnně označované jako NO WAX, se staly fenoménem. Ačkoli odpadá starost se stoupacími vosky, péče o tyto lyže je stále nezbytná.',
         image: '/img/clanky/no-wax.jpg'
     },
@@ -79,10 +86,7 @@ const articles = [
 ]
 
 useSeoMeta({
-    title: 'Články o běžkování | Tipy a rady pro běžecké lyžování',
-    description: 'Články a tipy pro běžecké lyžování. Jak vybrat správnou délku holí, techniky běhu na lyžích a další užitečné informace pro běžkaře.',
-    ogTitle: 'Články o běžkování | Ročiski',
-    ogDescription: 'Užitečné články a tipy pro běžecké lyžování od zkušených instruktorů.',
-    ogUrl: 'https://rociski.cz/clanky',
+    title: 'Články o běžkování – tipy a rady',
+    description: 'Rady od bývalých závodníků: délka holí a běžek, péče o skin a šupinové běžky, soupaž a uskladnění lyží přes léto.',
 })
 </script>

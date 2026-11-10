@@ -23,7 +23,7 @@
             <!-- Featured Image -->
             <div class="mb-10 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                    src="/img/clanky/delka-holi.jpg" 
+                    src="/img/clanky/delka-holi.webp" srcset="/img/clanky/delka-holi-960.webp 960w, /img/clanky/delka-holi.webp 1920w" fetchpriority="high" sizes="(max-width: 896px) 100vw, 896px" width="1920" height="1281" 
                     alt="Délka holí pro běžky"
                     class="w-full h-auto object-cover"
                 />
@@ -125,11 +125,8 @@ const poleData = [
 ]
 
 useSeoMeta({
-    title: 'Jakou zvolit délku holí pro běžky | Tabulka doporučených délek',
-    description: 'Jak vybrat správnou délku běžeckých holí pro klasický styl a bruslení. Tabulka doporučených délek holí podle výšky lyžaře.',
-    ogTitle: 'Délka holí pro běžky | Ročiski',
-    ogDescription: 'Jak vybrat správnou délku běžeckých holí. Tabulka doporučených délek pro klasiku a skate.',
-    ogUrl: 'https://rociski.cz/clanky/delka-holi',
+    title: 'Délka holí na běžky – tabulka podle výšky',
+    description: 'Jak vybrat správnou délku běžeckých holí pro klasiku a bruslení. Tabulka doporučených délek holí podle výšky lyžaře.',
     ogImage: 'https://rociski.cz/img/clanky/delka-holi.jpg',
 })
 </script>

@@ -1,22 +1,5 @@
 <template>
     <header class="bg-white z-50">
-      <!-- Announcement Bar - Running Banner -->
-      <div class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 py-2.5 overflow-hidden relative hidden">
-        <div class="marquee-wrapper">
-          <div class="marquee-content">
-            <span v-for="i in 3" :key="i" class="inline-flex items-center gap-2 text-sm font-medium text-white px-8">
-              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-              </svg>
-              <span>Moc se omlouváme, pokud jsme vám neodpověděli. Měli jsme technické problémy se starým e-mailem. Napište nám prosím znovu na nový e-mail</span>
-              <a href="mailto:jiri.rocarek@seznam.cz" class="underline font-bold hover:text-amber-100 transition-colors">jiri.rocarek@seznam.cz</a>
-              <span>, ozveme se vám co nejdříve!</span>
-              <span class="text-amber-200 mx-4">✦</span>
-            </span>
-          </div>
-        </div>
-      </div>
-
       <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <NuxtLink to="/" class="-m-1.5 p-1.5">
@@ -34,11 +17,11 @@
           <NuxtLink 
             to="/about" 
             class="relative text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-50 hover:text-sky-700"
-            :class="{ 'text-sky-700 bg-sky-50': route.path === '/about' }"
+            :class="{ 'text-sky-700 bg-sky-50': path === '/about' }"
           >
             O nás
             <span 
-              v-if="route.path === '/about'" 
+              v-if="path === '/about'" 
               class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] h-0.5 bg-sky-500 rounded-full"
             ></span>
           </NuxtLink>
@@ -46,7 +29,7 @@
           <Popover class="relative" v-slot="{ open, close }">
             <PopoverButton 
               class="flex items-center gap-x-1 text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-50 hover:text-sky-700 outline-none"
-              :class="{ 'text-sky-700 bg-sky-50': route.path.startsWith('/kurzy') || open }"
+              :class="{ 'text-sky-700 bg-sky-50': path.startsWith('/kurzy') || open }"
             >
               Kurzy
               <ChevronDownIcon 
@@ -55,19 +38,19 @@
                 aria-hidden="true" 
               />
               <span 
-                v-if="route.path.startsWith('/kurzy')" 
+                v-if="path.startsWith('/kurzy')" 
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] h-0.5 bg-sky-500 rounded-full"
               ></span>
             </PopoverButton>
   
             <transition enter-active-class="transition ease-out duration-300" enter-from-class="opacity-0 translate-y-1" enter-to-class="translate-y-0" leave-active-class="transition ease-in duration-150" leave-from-class="translate-y-0" leave-to-class="opacity-0 translate-y-1">
-              <PopoverPanel class="absolute left-1/2 z-10 mt-3 w-64 -translate-x-1/2 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-900/5">
+              <PopoverPanel :unmount="false" class="absolute left-1/2 z-10 mt-3 w-64 -translate-x-1/2 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-900/5">
                 <NuxtLink 
                   v-for="item in kurzy" 
                   :key="item.name" 
                   :to="item.href" 
                   class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-blue-950 transition-colors duration-150 hover:bg-sky-50 hover:text-sky-700 mb-1"
-                  :class="{ 'bg-sky-50 text-sky-700': route.path === item.href }"
+                  :class="{ 'bg-sky-50 text-sky-700': path === item.href }"
                   @click="close"
                 >
                   {{ item.name }}
@@ -79,7 +62,7 @@
           <Popover class="relative" v-slot="{ open, close }">
             <PopoverButton 
               class="flex items-center gap-x-1 text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-50 hover:text-sky-700 outline-none"
-              :class="{ 'text-sky-700 bg-sky-50': route.path.startsWith('/servis-lyzi') || open }"
+              :class="{ 'text-sky-700 bg-sky-50': path.startsWith('/servis-lyzi') || open }"
             >
               Servis lyží
               <ChevronDownIcon 
@@ -88,19 +71,19 @@
                 aria-hidden="true" 
               />
               <span 
-                v-if="route.path.startsWith('/servis-lyzi')" 
+                v-if="path.startsWith('/servis-lyzi')" 
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] h-0.5 bg-sky-500 rounded-full"
               ></span>
             </PopoverButton>
   
             <transition enter-active-class="transition ease-out duration-300" enter-from-class="opacity-0 translate-y-1" enter-to-class="translate-y-0" leave-active-class="transition ease-in duration-150" leave-from-class="translate-y-0" leave-to-class="opacity-0 translate-y-1">
-              <PopoverPanel class="absolute left-1/2 z-10 mt-3 w-56 -translate-x-1/2 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-900/5">
+              <PopoverPanel :unmount="false" class="absolute left-1/2 z-10 mt-3 w-56 -translate-x-1/2 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-900/5">
                 <NuxtLink 
                   v-for="item in servisLyzi" 
                   :key="item.name" 
                   :to="item.href" 
                   class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-blue-950 transition-colors duration-150 hover:bg-sky-50 hover:text-sky-700 mb-1"
-                  :class="{ 'bg-sky-50 text-sky-700': route.path === item.href }"
+                  :class="{ 'bg-sky-50 text-sky-700': path === item.href }"
                   @click="close"
                 >
                   {{ item.name }}
@@ -112,11 +95,11 @@
           <NuxtLink 
             to="/clanky" 
             class="relative text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-50 hover:text-sky-700"
-            :class="{ 'text-sky-700 bg-sky-50': route.path.startsWith('/clanky') }"
+            :class="{ 'text-sky-700 bg-sky-50': path.startsWith('/clanky') }"
           >
             Články
             <span 
-              v-if="route.path.startsWith('/clanky')" 
+              v-if="path.startsWith('/clanky')" 
               class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] h-0.5 bg-sky-500 rounded-full"
             ></span>
           </NuxtLink>
@@ -124,11 +107,11 @@
           <NuxtLink 
             to="/cenik" 
             class="relative text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-50 hover:text-sky-700"
-            :class="{ 'text-sky-700 bg-sky-50': route.path === '/cenik' }"
+            :class="{ 'text-sky-700 bg-sky-50': path === '/cenik' }"
           >
             Ceník
             <span 
-              v-if="route.path === '/cenik'" 
+              v-if="path === '/cenik'" 
               class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] h-0.5 bg-sky-500 rounded-full"
             ></span>
           </NuxtLink>
@@ -136,11 +119,11 @@
           <NuxtLink 
             to="/darkovy-poukaz" 
             class="relative text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-50 hover:text-sky-700"
-            :class="{ 'text-sky-700 bg-sky-50': route.path === '/darkovy-poukaz' }"
+            :class="{ 'text-sky-700 bg-sky-50': path === '/darkovy-poukaz' }"
           >
             Dárkové poukazy
             <span 
-              v-if="route.path === '/darkovy-poukaz'" 
+              v-if="path === '/darkovy-poukaz'" 
               class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] h-0.5 bg-sky-500 rounded-full"
             ></span>
           </NuxtLink>
@@ -148,11 +131,11 @@
           <NuxtLink 
             to="/kontakt" 
             class="relative bg-sky-200 text-sm/6 font-semibold text-blue-950 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-sky-500 hover:text-white"
-            :class="{ 'text-sky-700 bg-sky-50': route.path === '/kontakt' }"
+            :class="{ 'text-sky-700 bg-sky-50': path === '/kontakt' }"
           >
           Kontaktujte nás
             <span 
-              v-if="route.path === '/kontakt'" 
+              v-if="path === '/kontakt'" 
               class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] h-0.5 bg-sky-500 rounded-full"
             ></span>
           </NuxtLink>
@@ -179,7 +162,7 @@
                 <NuxtLink 
                   to="/about" 
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
-                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': route.path === '/about' }"
+                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': path === '/about' }"
                   @click="mobileMenuOpen = false"
                 >
                   O nás
@@ -188,18 +171,18 @@
                 <Disclosure as="div" class="-mx-3" v-slot="{ open }">
                   <DisclosureButton 
                     class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
-                    :class="{ 'bg-sky-50 text-sky-700': route.path.startsWith('/kurzy') }"
+                    :class="{ 'bg-sky-50 text-sky-700': path.startsWith('/kurzy') }"
                   >
                     Kurzy
                     <ChevronDownIcon :class="[open ? 'rotate-180' : '', 'size-5 flex-none transition-transform duration-300']" aria-hidden="true" />
                   </DisclosureButton>
-                  <DisclosurePanel class="mt-2 space-y-1">
+                  <DisclosurePanel :unmount="false" class="mt-2 space-y-1">
                     <NuxtLink 
                       v-for="item in kurzy" 
                       :key="item.name" 
                       :to="item.href" 
                       class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
-                      :class="{ 'bg-sky-50 text-sky-700': route.path === item.href }"
+                      :class="{ 'bg-sky-50 text-sky-700': path === item.href }"
                       @click="mobileMenuOpen = false"
                     >
                       {{ item.name }}
@@ -210,18 +193,18 @@
                 <Disclosure as="div" class="-mx-3" v-slot="{ open }">
                   <DisclosureButton 
                     class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
-                    :class="{ 'bg-sky-50 text-sky-700': route.path.startsWith('/servis-lyzi') }"
+                    :class="{ 'bg-sky-50 text-sky-700': path.startsWith('/servis-lyzi') }"
                   >
                     Servis lyží
                     <ChevronDownIcon :class="[open ? 'rotate-180' : '', 'size-5 flex-none transition-transform duration-300']" aria-hidden="true" />
                   </DisclosureButton>
-                  <DisclosurePanel class="mt-2 space-y-1">
+                  <DisclosurePanel :unmount="false" class="mt-2 space-y-1">
                     <NuxtLink 
                       v-for="item in servisLyzi" 
                       :key="item.name" 
                       :to="item.href" 
                       class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
-                      :class="{ 'bg-sky-50 text-sky-700': route.path === item.href }"
+                      :class="{ 'bg-sky-50 text-sky-700': path === item.href }"
                       @click="mobileMenuOpen = false"
                     >
                       {{ item.name }}
@@ -232,7 +215,7 @@
                 <NuxtLink 
                   to="/clanky" 
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
-                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': route.path.startsWith('/clanky') }"
+                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': path.startsWith('/clanky') }"
                   @click="mobileMenuOpen = false"
                 >
                   Články
@@ -241,7 +224,7 @@
                 <NuxtLink 
                   to="/cenik" 
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
-                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': route.path === '/cenik' }"
+                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': path === '/cenik' }"
                   @click="mobileMenuOpen = false"
                 >
                   Ceník
@@ -250,7 +233,7 @@
                 <NuxtLink 
                   to="/darkovy-poukaz" 
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
-                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': route.path === '/darkovy-poukaz' }"
+                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': path === '/darkovy-poukaz' }"
                   @click="mobileMenuOpen = false"
                 >
                   Dárkové poukazy
@@ -259,7 +242,7 @@
                 <NuxtLink 
                   to="/kontakt" 
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-sky-50 hover:text-sky-700 transition-colors"
-                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': route.path === '/kontakt' }"
+                  :class="{ 'bg-sky-50 text-sky-700 border-l-4 border-sky-500': path === '/kontakt' }"
                   @click="mobileMenuOpen = false"
                 >
                   Kontakt
@@ -304,30 +287,6 @@
   ]
   
 const mobileMenuOpen = ref(false)
+// URL mají lomítko na konci (/about/), porovnává se bez něj
+const path = computed(() => route.path.replace(/\/$/, '') || '/')
 </script>
-
-<style scoped>
-.marquee-wrapper {
-  display: flex;
-  width: 100%;
-}
-
-.marquee-content {
-  display: flex;
-  white-space: nowrap;
-  animation: scroll 25s linear infinite;
-}
-
-.marquee-wrapper:hover .marquee-content {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-33.333%);
-  }
-}
-</style>

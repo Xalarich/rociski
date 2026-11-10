@@ -3,7 +3,7 @@
         <!-- Background Image -->
         <div class="absolute inset-0 min-h-[800px]">
             <img 
-                src="/img/pruvodce.jpg" 
+                src="/img/pruvodce.webp" srcset="/img/pruvodce-960.webp 960w, /img/pruvodce.webp 1920w" fetchpriority="high" sizes="100vw" 
                 alt="Průvodce srdcem Vysočiny" 
                 class="w-full h-full object-cover"
             />
@@ -26,11 +26,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Průvodce srdcem Vysočiny | Běžky Vysočina aréna | Žďárské vrchy',
-  description: 'Průvodcování po Vysočině – singltreky kolem Vysočina areny, nejhezčí místa Žďárských vrchů. Kam na běžky Vysočina? Výlety na kole i pěšky s možností zapůjčení kol.',
-  ogTitle: 'Průvodce srdcem Vysočiny | Běžky Vysočina aréna',
-  ogDescription: 'Průvodcování po Vysočině – singltreky kolem Vysočina areny, Žďárské vrchy. Kam na běžky Vysočina.',
-  ogUrl: 'https://rociski.cz/kurzy/pruvodce',
+  title: 'Průvodce po Vysočině – kolo i pěší výlety',
+  description: 'Provedeme vás po nejhezčích místech Žďárských vrchů a singltrecích kolem Vysočina Areny. Výlety na kole i pěšky, možnost zapůjčení kol.',
   ogImage: 'https://rociski.cz/img/pruvodce.jpg',
 })
 </script>

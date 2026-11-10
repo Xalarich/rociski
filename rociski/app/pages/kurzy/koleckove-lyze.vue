@@ -3,7 +3,7 @@
         <!-- Background Image -->
         <div class="absolute inset-0 min-h-[800px]">
             <img 
-                src="/img/koleckace.jpg" 
+                src="/img/koleckace.webp" srcset="/img/koleckace-960.webp 960w, /img/koleckace.webp 1200w" fetchpriority="high" sizes="100vw" 
                 alt="Kolečkové lyže" 
                 class="w-full h-full object-cover"
             />
@@ -27,11 +27,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Kolečkové lyže | Letní trénink techniky běhu na lyžích | Vysočina',
-  description: 'Kurzy na kolečkových lyžích v létě na Vysočině. Technika bruslení na lyžích, technika běhu na lyžích. Trénink v okolí Nového Města na Moravě.',
-  ogTitle: 'Kolečkové lyže | Letní trénink techniky běhu na lyžích',
-  ogDescription: 'Kurzy na kolečkových lyžích v létě. Technika bruslení i klasická technika. Vysočina.',
-  ogUrl: 'https://rociski.cz/kurzy/koleckove-lyze',
+  title: 'Kurz na kolečkových lyžích – Vysočina',
+  description: 'Letní kurzy na kolečkových lyžích u Nového Města na Moravě. Technika bruslení i klasiky jako příprava na zimu.',
   ogImage: 'https://rociski.cz/img/koleckace.jpg',
 })
 </script>

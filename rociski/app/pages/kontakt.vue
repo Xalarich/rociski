@@ -102,10 +102,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Kontakt | Kurz běžkování Vysočina | Instruktor běžkování Nové Město na Moravě',
-  description: 'Kontaktujte nás – kurzy běžkování Vysočina, instruktor běžkování Nové Město na Moravě. Tel: +420 777 845 298, email: jiri.rocarek@seznam.cz. Kam na běžky Vysočina.',
-  ogTitle: 'Kontakt | Kurz běžkování Vysočina',
-  ogDescription: 'Kontaktujte nás – kurzy běžkování Vysočina. Tel: +420 777 845 298, email: jiri.rocarek@seznam.cz.',
-  ogUrl: 'https://rociski.cz/kontakt',
+  title: 'Kontakt – Nové Město na Moravě',
+  description: 'Ročiski, Vlachovická 450, Nové Město na Moravě. Tel. +420 777 845 298, e-mail jiri.rocarek@seznam.cz. Ozvěte se kvůli kurzu i servisu běžek.',
 })
 </script>

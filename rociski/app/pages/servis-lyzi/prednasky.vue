@@ -3,7 +3,7 @@
         <!-- Background Image -->
         <div class="absolute inset-0 min-h-[800px]">
             <img 
-                src="/img/prednaska.jpg" 
+                src="/img/prednaska.webp" srcset="/img/prednaska-960.webp 960w, /img/prednaska.webp 1920w" fetchpriority="high" sizes="100vw" 
                 alt="Přednášky o servisu lyží" 
                 class="w-full h-full object-cover"
             />
@@ -26,11 +26,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Přednášky o servisu běžek | Jak namazat běžky | Jak vybrat běžky',
-  description: 'Přednášky o servisu běžek – naučíme vás jak namazat běžky, mazání běžek klistrem i vosky. Poradíme jak vybrat běžky pro vaše potřeby. Přednášky pro skupiny dle domluvy.',
-  ogTitle: 'Přednášky o servisu běžek | Jak namazat a vybrat běžky',
-  ogDescription: 'Přednášky o servisu běžek – jak namazat běžky, mazání klistrem, jak vybrat běžky.',
-  ogUrl: 'https://rociski.cz/servis-lyzi/prednasky',
+  title: 'Kurz mazání běžek – přednášky o servisu',
+  description: 'Přednášky o servisu a mazání běžek pro skupiny: stoupací a skluzné vosky, klistr i jak vybrat běžky. Termín a místo dle domluvy.',
   ogImage: 'https://rociski.cz/img/prednaska.jpg',
 })
 </script>

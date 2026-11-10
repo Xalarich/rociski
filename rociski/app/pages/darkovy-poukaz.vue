@@ -211,7 +211,7 @@
             <div class="mt-12 text-center">
                 <NuxtLink 
                     to="/kontakt" 
-                    class="inline-flex items-center px-6 py-3 md:px-8 md:py-4 bg-sky-500 text-white font-semibold rounded-full shadow-lg hover:bg-sky-600 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base"
+                    class="inline-flex items-center px-6 py-3 md:px-8 md:py-4 bg-sky-700 text-white font-semibold rounded-full shadow-lg hover:bg-sky-800 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base"
                 >
                     <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -228,10 +228,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Dárkové poukazy | Kurz běžkování Vysočina | Výuka běžkování',
-  description: 'Darujte zážitek – dárkové poukazy na kurz běžkování. Individuální výuka běžkování, skupinové kurzy běžkování na Vysočině. Platnost 12 měsíců.',
-  ogTitle: 'Dárkové poukazy | Kurz běžkování',
-  ogDescription: 'Darujte zážitek – dárkové poukazy na kurz běžkování na Vysočině. Platnost 12 měsíců.',
-  ogUrl: 'https://rociski.cz/darkovy-poukaz',
+  title: 'Dárkový poukaz na kurz běžkování',
+  description: 'Darujte kurz běžeckého lyžování na Vysočině. Dárkový poukaz na individuální i skupinovou výuku s platností 12 měsíců.',
 })
 </script>

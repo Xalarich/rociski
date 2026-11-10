@@ -8,14 +8,14 @@
                         <NuxtLink to="/clanky" class="hover:text-sky-600 transition-colors">Články</NuxtLink>
                     </li>
                     <li class="mx-2">/</li>
-                    <li class="text-gray-800">Péče o NO WAX běžky</li>
+                    <li class="text-gray-800">Péče o skin a šupinové běžky</li>
                 </ol>
             </nav>
 
             <!-- Article Header -->
             <header class="mb-8">
                 <h1 class="text-2xl sm:text-3xl font-light text-gray-800 mb-4 leading-tight">
-                    Péče o NO WAX běžky: Kompletní průvodce údržbou lyží se skinem, šupinami i nanogripem
+                    Péče o skin a šupinové běžky: kompletní průvodce údržbou NO WAX lyží se skinem, šupinami i nanogripem
                 </h1>
                 <div class="w-24 h-1 bg-sky-500"></div>
             </header>
@@ -23,8 +23,8 @@
             <!-- Featured Image -->
             <div class="mb-10 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                    src="/img/clanky/no-wax.jpg" 
-                    alt="Péče o NO WAX běžky"
+                    src="/img/clanky/no-wax.webp" srcset="/img/clanky/no-wax-960.webp 960w, /img/clanky/no-wax.webp 1920w" fetchpriority="high" sizes="(max-width: 896px) 100vw, 896px" width="1920" height="998" 
+                    alt="Čištění skluznice běžek se skinem"
                     class="w-full h-auto object-cover"
                 />
             </div>
@@ -147,11 +147,8 @@ const cleaningData = [
 ]
 
 useSeoMeta({
-    title: 'Péče o NO WAX běžky | Údržba lyží se skinem, šupinami i nanogripem',
-    description: 'Kompletní průvodce údržbou NO WAX běžek. Jak správně pečovat o lyže se skinem, šupinami a nanogripem. Tipy pro čištění a údržbu odrazové i skluzné zóny.',
-    ogTitle: 'Péče o NO WAX běžky | Ročiski',
-    ogDescription: 'Kompletní průvodce údržbou NO WAX běžek - skin lyže, šupiny, nanogrip.',
-    ogUrl: 'https://rociski.cz/clanky/pece-o-no-wax-bezky',
+    title: 'Péče o skin a šupinové běžky (NO WAX)',
+    description: 'Jak čistit a udržovat běžky se skinem, šupinami i nanogripem. Péče o odrazovou i skluznou zónu NO WAX lyží krok za krokem.',
     ogImage: 'https://rociski.cz/img/clanky/no-wax.jpg',
 })
 </script>

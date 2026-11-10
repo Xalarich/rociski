@@ -23,7 +23,7 @@
             <!-- Featured Image -->
             <div class="mb-10 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                    src="/img/clanky/jak-na-soupaz.jpg" 
+                    src="/img/clanky/jak-na-soupaz.webp" srcset="/img/clanky/jak-na-soupaz-960.webp 960w, /img/clanky/jak-na-soupaz.webp 1024w" fetchpriority="high" sizes="(max-width: 896px) 100vw, 896px" width="1024" height="683" 
                     alt="Soupaž na běžkách"
                     class="w-full h-auto object-cover"
                 />
@@ -110,7 +110,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <p class="text-sm text-sky-800">
-                            <strong>Tip:</strong> Technika soupaže je důležitá. Když se jí budete věnovat, zadarmo získáte cenné vteřiny, nebo dokonce minuty na své soupeře. Pokud máte možnost, nechejte si poradit od zkušenějších, anebo aspoň jednorázově zaplatit výuku v některé z lyžařských škol.
+                            <strong>Tip:</strong> Technika soupaže je důležitá. Když se jí budete věnovat, zadarmo získáte cenné vteřiny, nebo dokonce minuty na své soupeře. Pokud máte možnost, nechejte si poradit od zkušenějších, anebo aspoň jednorázově zaplatit výuku, třeba <NuxtLink to="/kurzy/bezky" class="underline font-medium">na našem kurzu běžkování</NuxtLink>.
                         </p>
                     </div>
                 </div>
@@ -210,11 +210,8 @@
 
 <script setup>
 useSeoMeta({
-    title: 'Soupaž na běžkách | Průvodce pro začátečníky a pokročilé',
-    description: 'Kompletní průvodce soupaží na běžkách. Jak začít, jak trénovat, technika soupaže a pravidla pro dálkové běžecké závody. Tipy pro začátečníky i pokročilé.',
-    ogTitle: 'Soupaž na běžkách | Ročiski',
-    ogDescription: 'Průvodce soupaží na běžkách pro začátečníky a pokročilé. Jak začít, jak trénovat a co vědět o pravidlech.',
-    ogUrl: 'https://rociski.cz/clanky/soupaz-na-bezkach',
+    title: 'Soupaž na běžkách – technika a trénink',
+    description: 'Jak začít se soupaží, jak ji trénovat a co říkají pravidla dálkových závodů. Průvodce pro začátečníky i pokročilé od bývalých závodníků.',
     ogImage: 'https://rociski.cz/img/clanky/jak-na-soupaz.jpg',
 })
 </script>

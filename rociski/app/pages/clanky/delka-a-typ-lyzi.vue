@@ -23,7 +23,7 @@
             <!-- Featured Image -->
             <div class="mb-10 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                    src="/img/servis.jpg" 
+                    src="/img/servis.webp" srcset="/img/servis-960.webp 960w, /img/servis.webp 1920w" fetchpriority="high" sizes="(max-width: 896px) 100vw, 896px" width="1920" height="1280" 
                     alt="Běžecké lyže"
                     class="w-full h-auto object-cover"
                 />
@@ -266,11 +266,8 @@
 
 <script setup>
 useSeoMeta({
-    title: 'Délka a typ lyží | Průvodce výběrem běžek',
-    description: 'Kompletní průvodce výběrem běžeckých lyží. Jakou délku zvolit pro začátečníky, sportovce a závodníky. Typy běžek: šupiny, skin, kombi, backcountry.',
-    ogTitle: 'Délka a typ lyží | Ročiski',
-    ogDescription: 'Kompletní průvodce výběrem běžeckých lyží pro začátečníky, sportovce a závodníky.',
-    ogUrl: 'https://rociski.cz/clanky/delka-a-typ-lyzi',
+    title: 'Délka a typ běžek – jak vybrat běžky',
+    description: 'Jak vybrat běžky a jakou délku zvolit pro začátečníky, rekreační sportovce i závodníky. Typy běžek: šupiny, skin, kombi i backcountry.',
     ogImage: 'https://rociski.cz/img/servis.jpg',
 })
 </script>

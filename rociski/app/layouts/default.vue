@@ -14,10 +14,11 @@ const route = useRoute()
 const noFullHeightPages = ['/cenik', '/darkovy-poukaz', '/kontakt', '/about']
 
 const isFullHeightPage = computed(() => {
-  // Check if it's a clanky page (main or any article)
-  if (route.path === '/clanky' || route.path.startsWith('/clanky/')) {
+  // URL mají lomítko na konci (/cenik/), seznam je bez něj
+  const path = route.path.replace(/\/$/, '')
+  if (path === '/clanky' || path.startsWith('/clanky/')) {
     return false
   }
-  return !noFullHeightPages.includes(route.path)
+  return !noFullHeightPages.includes(path)
 })
 </script>
