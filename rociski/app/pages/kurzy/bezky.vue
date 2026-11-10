@@ -1,16 +1,17 @@
 <template>
     <div class="relative min-h-[calc(100vh-80px)] flex items-start justify-end">
         <!-- Background Image -->
-        <div class="absolute inset-0 min-h-[800px]">
+        <!-- Fotka na výšku displeje: sticky drží záběr při scrollu, overflow-clip (ne hidden) sticky nezruší -->
+        <div class="absolute inset-0 overflow-clip">
             <img 
                 src="/img/kurzy.webp" srcset="/img/kurzy-960.webp 960w, /img/kurzy.webp 1920w" fetchpriority="high" sizes="100vw" 
                 alt="Kurz běžkování u Nového Města na Moravě" 
-                class="w-full h-full object-cover object-[30%_0%] md:object-[75%_0%]"
+                class="sticky top-0 w-full h-screen max-h-full object-cover object-[33%_50%] lg:landscape:object-[75%_85%]"
             />
         </div> 
         
         <!-- Content Overlay -->
-        <div class="relative z-10 py-8 px-4 md:px-8 lg:px-16">
+        <div class="relative z-10 py-8 pt-[50svh] lg:landscape:pt-8 px-4 md:px-8 lg:px-16">
             <!-- Text Box -->
             <div class="bg-white/80 backdrop-blur-xs p-6 sm:p-8 max-w-lg shadow-lg rounded-2xl">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl italic text-gray-900 mb-4 md:mb-6">Kurzy běžkování</h1>

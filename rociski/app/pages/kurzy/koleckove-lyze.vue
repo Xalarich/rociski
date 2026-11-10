@@ -1,16 +1,17 @@
 <template>
-    <div class="relative min-h-[800px] md:min-h-[calc(100vh-80px)] flex items-end justify-start">
+    <div class="relative min-h-[calc(100vh-80px)] flex items-start lg:landscape:items-end justify-start">
         <!-- Background Image -->
-        <div class="absolute inset-0 min-h-[800px]">
+        <!-- Fotka na výšku displeje: sticky drží záběr při scrollu, overflow-clip (ne hidden) sticky nezruší -->
+        <div class="absolute inset-0 overflow-clip">
             <img 
                 src="/img/koleckace.webp" srcset="/img/koleckace-960.webp 960w, /img/koleckace.webp 1200w" fetchpriority="high" sizes="100vw" 
                 alt="Kolečkové lyže" 
-                class="w-full h-full object-cover"
+                class="sticky top-0 w-full h-screen max-h-full object-cover object-[58%_50%] lg:landscape:object-center"
             />
         </div>
         
         <!-- Content Overlay -->
-        <div class="relative z-10 items-center py-8 px-4 md:px-8 lg:px-16">
+        <div class="relative z-10 items-center py-8 pt-[50svh] lg:landscape:pt-8 px-4 md:px-8 lg:px-16">
             <!-- Text Box -->
             <div class="bg-white/80 backdrop-blur-xs p-6 sm:p-8 max-w-lg shadow-lg rounded-2xl">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl italic text-gray-900 mb-4 md:mb-6">Kolečkové lyže</h1>

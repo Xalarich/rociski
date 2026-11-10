@@ -22,3 +22,6 @@ logs
 .env
 .env.*
 !.env.example
+
+# SMTP přístupy pro kontaktní formulář, jen na serveru (nahrává se přes FTP)
+public/api/config.php

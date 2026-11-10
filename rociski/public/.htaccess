@@ -12,6 +12,13 @@
   RewriteRule ^ /%1 [R=301,L]
 </IfModule>
 
+# SMTP heslo kontaktního formuláře (api/config.php) nesmí být dostupné zvenku
+<Files "config.php">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</Files>
+
 # Neexistující URL → česká stránka 404 (Nuxt SPA fallback) se stavem 404
 ErrorDocument 404 /404.html
 

@@ -11,7 +11,7 @@
 <script setup>
 const route = useRoute()
 
-const noFullHeightPages = ['/cenik', '/darkovy-poukaz', '/kontakt', '/about']
+const noFullHeightPages = ['/cenik', '/darkovy-poukaz', '/kontakt', '/about', '/ochrana-osobnich-udaju']
 
 const isFullHeightPage = computed(() => {
   // URL mají lomítko na konci (/cenik/), seznam je bez něj

@@ -9,9 +9,9 @@
           <a href="tel:+420777845298" class="inline-flex justify-center items-center px-6 py-3 bg-sky-700 text-white font-semibold rounded-full hover:bg-sky-800 transition-colors">
             Zavolat +420 777 845 298
           </a>
-          <a href="mailto:jiri.rocarek@seznam.cz" class="inline-flex justify-center items-center px-6 py-3 bg-white text-sky-800 font-semibold rounded-full ring-1 ring-sky-200 hover:bg-sky-100 transition-colors">
-            Napsat e-mail
-          </a>
+          <NuxtLink to="/kontakt#formular" class="inline-flex justify-center items-center px-6 py-3 bg-white text-sky-800 font-semibold rounded-full ring-1 ring-sky-200 hover:bg-sky-100 transition-colors">
+            Napsat zprávu
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -46,12 +46,13 @@
 
     <p class="pb-8 text-center text-sm/6 text-gray-600">
       &copy; {{ year }} Ročiski ·
+      <NuxtLink to="/ochrana-osobnich-udaju" class="hover:text-sky-700 underline">Ochrana osobních údajů</NuxtLink> ·
       <button type="button" class="hover:text-sky-700 underline" @click="showConsent = true">Nastavení cookies</button>
     </p>
 
     <!-- Cookie lišta: jen na klientu (volba je v localStorage), odmítnutí stejně snadné jako souhlas -->
     <div v-if="showConsent" role="dialog" aria-label="Souhlas s cookies" class="fixed bottom-3 left-3 right-3 sm:right-auto sm:max-w-xs z-50 bg-white rounded-xl shadow-lg ring-1 ring-gray-200 p-3 text-xs text-gray-700">
-      <p class="mb-2">Měříme návštěvnost přes Google Analytics (cookies <code>_ga</code>, až 2 roky).</p>
+      <p class="mb-2">Měříme návštěvnost přes Google Analytics. <NuxtLink to="/ochrana-osobnich-udaju" class="underline hover:text-sky-700">Podrobnosti</NuxtLink></p>
       <div class="flex gap-2">
         <button type="button" class="flex-1 px-3 py-1.5 rounded-full bg-sky-700 text-white font-semibold hover:bg-sky-800" @click="setConsent('denied')">Odmítnout</button>
         <button type="button" class="flex-1 px-3 py-1.5 rounded-full bg-sky-700 text-white font-semibold hover:bg-sky-800" @click="setConsent('granted')">Přijmout</button>

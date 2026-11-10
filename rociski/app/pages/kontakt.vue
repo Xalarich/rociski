@@ -86,6 +86,41 @@
                 </div>
             </div>
 
+            <!-- Formulář: odesílá public/api/kontakt.php přes SMTP -->
+            <div id="formular" class="mt-12 bg-white rounded-2xl shadow-lg p-8 scroll-mt-4">
+                <h2 class="text-lg md:text-xl font-semibold text-gray-800 mb-6">Napište nám</h2>
+                <p v-if="status === 'ok'" role="status" class="rounded-lg bg-green-50 text-green-800 p-4">
+                    Děkujeme, zpráva odešla. Potvrzení jsme vám poslali e-mailem a ozveme se co nejdříve.
+                </p>
+                <form v-else class="grid gap-4 sm:grid-cols-2" @submit.prevent="send">
+                    <label class="block">
+                        <span class="text-sm font-medium text-gray-700">Jméno *</span>
+                        <input name="jmeno" required maxlength="100" autocomplete="name" class="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500">
+                    </label>
+                    <label class="block">
+                        <span class="text-sm font-medium text-gray-700">E-mail *</span>
+                        <input name="email" type="email" required maxlength="200" autocomplete="email" class="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500">
+                    </label>
+                    <label class="block sm:col-span-2">
+                        <span class="text-sm font-medium text-gray-700">Telefon</span>
+                        <input name="telefon" type="tel" maxlength="30" autocomplete="tel" class="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500">
+                    </label>
+                    <label class="block sm:col-span-2">
+                        <span class="text-sm font-medium text-gray-700">Zpráva *</span>
+                        <textarea name="zprava" required maxlength="5000" rows="5" placeholder="Kurz, servis běžek, dárkový poukaz… Kdy a pro kolik lidí?" class="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"></textarea>
+                    </label>
+                    <!-- Past na roboty: člověk pole nevidí -->
+                    <input name="web" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px]">
+                    <div class="sm:col-span-2 flex flex-col sm:flex-row sm:items-center gap-3">
+                        <button type="submit" :disabled="status === 'sending'" class="px-6 py-3 bg-sky-700 text-white font-semibold rounded-full hover:bg-sky-800 disabled:opacity-60 transition-colors">
+                            {{ status === 'sending' ? 'Odesílám…' : 'Odeslat zprávu' }}
+                        </button>
+                        <p class="text-xs text-gray-500">Údaje použijeme jen k odpovědi na vaši zprávu. <NuxtLink to="/ochrana-osobnich-udaju" class="underline hover:text-sky-700">Ochrana osobních údajů</NuxtLink></p>
+                    </div>
+                    <p v-if="status === 'error'" role="alert" class="sm:col-span-2 text-red-700">{{ errorText }}</p>
+                </form>
+            </div>
+
             <!-- Map or Additional Section (optional placeholder) -->
             <div class="mt-12 bg-white rounded-2xl shadow-lg p-8 text-center">
                 <div class="flex items-center justify-center mb-4">
@@ -101,6 +136,23 @@
 </template>
 
 <script setup>
+const status = ref('') // '' | 'sending' | 'ok' | 'error'
+const errorText = ref('')
+
+async function send(e) {
+  status.value = 'sending'
+  try {
+    const res = await fetch('/api/kontakt.php', { method: 'POST', body: new FormData(e.target) })
+    const data = await res.json().catch(() => ({}))
+    if (!res.ok || !data.ok) throw new Error(data.error)
+    status.value = 'ok'
+    window.gtag?.('event', 'generate_lead', { method: 'form' })
+  } catch (err) {
+    errorText.value = err.message || 'Zprávu se nepodařilo odeslat. Zavolejte nám prosím na +420 777 845 298.'
+    status.value = 'error'
+  }
+}
+
 useSeoMeta({
   title: 'Kontakt – Nové Město na Moravě',
   description: 'Ročiski, Vlachovická 450, Nové Město na Moravě. Tel. +420 777 845 298, e-mail jiri.rocarek@seznam.cz. Ozvěte se kvůli kurzu i servisu běžek.',
